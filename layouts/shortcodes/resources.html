@@ -1,0 +1,10 @@
+{{/* ABOUTME: Simple Hugo shortcode that outputs resources list from data/resources.yaml */}}
+{{/* ABOUTME: Usage: {{< resources >}} - just dumps out all the resources */}}
+
+<ul>
+{{ range .Site.Data.resources }}
+  <li>
+    <a href="{{ .url }}">{{ .name }}</a> - {{ .description }}{{ if .example }} <a href="{{ .example_url }}">{{ .example }}</a> {{ .example_note }}{{ end }}
+  </li>
+{{ end }}
+</ul>

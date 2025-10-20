@@ -1,0 +1,45 @@
+{{/* ABOUTME: Custom figure shortcode that uses Hugo's assets pipeline for image processing */}}
+{{/* ABOUTME: Supports src, alt, caption, link parameters and generates responsive WebP images */}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+{{ $link := .Get "link" }}
+
+{{ if $src }}
+  {{ $image := false }}
+  {{ $isResource := false }}
+  
+  {{ if hasPrefix $src "/images/" }}
+    {{ $imagePath := strings.TrimPrefix "/images/" $src }}
+    {{ $imageResource := resources.Get (printf "images/%s" $imagePath) }}
+    {{ if $imageResource }}
+      {{ $image = $imageResource.Resize "800x webp q85" }}
+      {{ $isResource = true }}
+    {{ else }}
+      {{ warnf "Image not found in assets: images/%s, using source path as fallback" $imagePath }}
+      {{ $image = $src }}
+    {{ end }}
+  {{ else }}
+    {{ $image = $src }}
+  {{ end }}
+  
+  <figure>
+    {{ if $link }}
+      <a href="{{ $link }}" target="_blank" rel="noopener">
+    {{ end }}
+    
+    {{ if $isResource }}
+      <img src="{{ $image.RelPermalink }}" alt="{{ $alt }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+    {{ else }}
+      <img src="{{ $image }}" alt="{{ $alt }}" />
+    {{ end }}
+    
+    {{ if $link }}
+      </a>
+    {{ end }}
+    
+    {{ with $caption }}
+      <figcaption>{{ . | markdownify }}</figcaption>
+    {{ end }}
+  </figure>
+{{ end }}

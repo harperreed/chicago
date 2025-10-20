@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div class="container mx-auto my-5 sm:max-w-2xl px-5">
+
+      {{ partialCached "header.html" . }}
+      {{ block "main" . }}
+      {{ end }}
+      {{ partialCached "footer.html" . }}
+  </div>
+  <script src="https://tinylytics.app/embed/FsFojECy_ojQBpqjn3Zp.js?kudos&hits&countries" defer></script>
+</body>
+
+</html>

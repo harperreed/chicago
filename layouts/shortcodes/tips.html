@@ -1,0 +1,16 @@
+{{/* ABOUTME: Simple Hugo shortcode that outputs tips list from data/tips.yaml
+*/}} {{/* ABOUTME: Usage: {{< tips >}} - just dumps out all the tips in order
+*/}}
+
+<ul>
+    {{ range .Site.Data.tips }}
+    <li
+        data-id="{{ .id }}"
+        data-category="{{ .category }}"
+        data-location="{{ .location }}"
+        data-skill="{{ .level }}"
+    >
+        {{ .tip | markdownify }}
+    </li>
+    {{ end }}
+</ul>

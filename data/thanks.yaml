@@ -1,0 +1,5 @@
+# ABOUTME: Simple data file containing people to thank for Japan travel help
+# ABOUTME: Just the basic list data that gets dumped out by the thanks shortcode
+
+- name: "Hiromi"
+- name: "Jordan"

@@ -1,0 +1,602 @@
+# ABOUTME: Simple data file containing current favorite spots in Japan
+# ABOUTME: Just the basic list data that gets dumped out by the favorites shortcode
+
+- name: "Noodlebird"
+  description: "A really wonderful macanese restaruant. Super tasty. "
+  location: "Logan Square"
+  url: "https://www.noodlebird.com/"
+  friends: true
+  type: restaurant
+  subtype: chinese
+  keywords: macao, chinese, gluten free, vegan
+
+- name: "Handlebar"
+  description: "Vegetarian & vegan comfort food served until midnight. Been going since 2003."
+  location: "Wicker Park"
+  url: "https://www.handlebarchicago.com/"
+  friends: true
+  type: restaurant
+  subtype: vegetarian
+  keywords: vegetarian, vegan, comfort food, beer garden
+
+- name: "Pequod's Pizza"
+  description: "Legendary deep dish pizza since 1970, famous for its caramelized crust. I don't like deep dish, but this isn't horrible"
+  location: "Lincoln Park"
+  url: "https://pequodspizza.com/chicago/"
+  friends: false
+  type: restaurant
+  subtype: pizza
+  keywords: pizza, deep dish, caramelized crust
+
+- name: "Akahoshi Ramen"
+  description: "Named one of Bon Appétit's 2024 best new restaurants. Everything made in-house including noodles. Run by Reddit's 'Ramen_Lord'."
+  location: "Logan Square"
+  url: "https://www.akahoshiramen.com/"
+  friends: true
+  type: restaurant
+  subtype: japanese
+  keywords: ramen, japanese, homemade noodles, miso
+
+- name: "Tufano's Vernon Park Tap"
+  description: "Classic red-sauce Italian joint since 1930. No sign on the door, no menus (chalkboard only). Featured on Diners, Drive-Ins and Dives."
+  location: "University Village"
+  url: "https://sites.google.com/site/tufanosrestaurant/"
+  friends: true
+  type: restaurant
+  subtype: italian
+  keywords: italian, red sauce, old school, veal
+
+- name: "Tensuke Market & Food Court"
+  description: "Japanese market with food court serving fresh sushi, ramen, tonkatsu, and curry. Family-owned for over 20 years with daily deliveries."
+  location: "Elk Grove Village"
+  url: "https://www.tensuke.com/"
+  friends: false
+  type: restaurant
+  subtype: japanese
+  keywords: japanese, sushi, ramen, market, food court
+
+- name: "Dicey's Pizza & Tavern"
+  description: "Tavern-style thin-crust pizza with unique toppings. Named by Esquire as one of the best places for Chicago tavern-style pizza in the U.S."
+  location: "Ukrainian Village"
+  url: "https://www.diceystavern.com/chicago"
+  friends: false
+  type: restaurant
+  subtype: pizza
+  keywords: pizza, tavern-style, thin crust, neighborhood bar
+
+- name: "Fatso's Last Stand"
+  description: "Elevated hot dog stand serving char dogs, burgers, and late-night eats. Won 'Best Burger Champion' at Roscoe Village Burger Fest 2019."
+  location: "Ukrainian Village"
+  url: "https://www.fatsoslaststand.com/"
+  friends: false
+  type: restaurant
+  subtype: american
+  keywords: hot dogs, burgers, late night, char dog
+
+- name: "Omakase Shoji"
+  description: "High-end omakase with 20-course kaiseki menu. Intimate 10-seat dining room with fish flown in from Japan multiple times a week."
+  location: "West Town"
+  url: "https://www.omakaseshoji.com"
+  friends: true
+  type: restaurant
+  subtype: japanese
+  keywords: omakase, japanese, sushi, kaiseki
+
+- name: "Kai Zan"
+  description: "Creative omakase-style sushi by the legendary Vizconde twins. Michelin Bib Gourmand, named Best New Sushi 2013 by TimeOut Chicago."
+  location: "Humboldt Park"
+  url: "http://www.eatatkaizan.com/"
+  friends: false
+  type: restaurant
+  subtype: japanese
+  keywords: sushi, omakase, japanese, asian fusion
+
+- name: "Amitabul"
+  description: "Buddhist Korean vegan cuisine since 1995. Prepared without salt, sugar, or oil. Try the 'Dark Side of the Moon' rice noodle dish."
+  location: "Norwood Park"
+  url: "https://www.amitabulvegan.com"
+  friends: false
+  type: restaurant
+  subtype: korean
+  keywords: vegan, korean, buddhist, healthy
+
+- name: "Pho Nam Lua"
+  description: "Family-owned Vietnamese restaurant since 2014. Ranked #1 on Steve Dolinsky's Chicago Pho Crawl for best pho in the city."
+  location: "North Park"
+  url: "https://www.pho5lua.com/"
+  friends: false
+  type: restaurant
+  subtype: vietnamese
+  keywords: vietnamese, pho, noodle soup
+
+- name: "Pho Loan"
+  description: "Authentic Vietnamese in Uptown's Little Vietnam. Known for bánh khọt rice pancakes and excellent bún cá trà vinh."
+  location: "Uptown"
+  url: "https://www.pholoan.com"
+  friends: false
+  type: restaurant
+  subtype: vietnamese
+  keywords: vietnamese, pho, southern vietnamese
+
+- name: "Star Lounge Coffee Bar"
+  description: "Dark Matter Coffee's flagship cafe. Long wood bar, outdoor patio with local artist installations, diverse brewing options."
+  location: "Ukrainian Village"
+  url: "https://www.darkmattercoffee.com/pages/star-lounge"
+  friends: false
+  type: cafe
+  keywords: coffee, dark matter, cafe, patio
+
+- name: "Metric Coffee"
+  description: "Certified B Corporation coffee roaster since 2013. Roasted on a self-restored '61 Probat UG 15 for exceptionally balanced, sweet, and clean coffees."
+  location: "Fulton Market"
+  url: "https://metriccoffee.com/"
+  friends: false
+  type: cafe
+  keywords: coffee, specialty coffee, b corp, roaster
+
+- name: "Big Star"
+  description: "Honky tonk-themed taco bar housed in a defunct 1940s gas station. Authentic Mexican street food by Paul Kahan, bourbon and beer focused."
+  location: "Wicker Park"
+  url: "https://www.bigstarchicago.com/"
+  friends: true
+  type: restaurant
+  subtype: mexican
+  keywords: tacos, mexican, margaritas, honky tonk
+
+- name: "Avec"
+  description: "Original West Loop location since 2003. Tiny, cramped Mediterranean restaurant by Paul Kahan. Still going strong after 20+ years."
+  location: "West Loop"
+  url: "https://www.avecrestaurant.com/"
+  friends: true
+  type: restaurant
+  subtype: mediterranean
+  keywords: mediterranean, small plates, paul kahan
+
+- name: "Publican Quality Bread"
+  description: "Bakery by Paul Kahan with naturally leavened breads and heritage grains. James Beard Award-winning baker Greg Wade. Try the buckwheat chocolate croissants."
+  location: "West Town"
+  url: "https://www.publicanqualitybread.com/"
+  friends: true
+  type: bakery
+  keywords: bread, bakery, croissants, james beard
+
+- name: "Publican Quality Meats"
+  description: "Butcher shop, cafe, and market in Fulton Market. Responsibly raised meats, house-cured charcuterie, and artisanal provisions. Part of One Off Hospitality."
+  location: "Fulton Market"
+  url: "https://www.publicanqualitymeats.com/"
+  friends: true
+  type: restaurant
+  subtype: american
+  keywords: butcher, charcuterie, cafe, market
+
+- name: "Yuzu Sushi & Robata Grill"
+  description: "Japanese restaurant since 2011 by former journalist Yut Vong. Creative sushi rolls and robata focusing on young urban diners."
+  location: "West Town"
+  url: "https://www.yuzuchicago.com/"
+  friends: true
+  type: restaurant
+  subtype: japanese
+  keywords: sushi, japanese, robata, creative rolls
+
+- name: "Museum of Contemporary Art Chicago"
+  description: "Founded 1967, one of the world's largest contemporary art venues. 2,500+ pieces of post-WWII art. Free for Illinois residents on Tuesdays 5-9pm."
+  location: "Streeterville"
+  url: "https://mcachicago.org/"
+  friends: false
+  type: museum
+  keywords: contemporary art, museum, exhibitions
+
+- name: "Wrightwood 659"
+  description: "Non-commercial exhibition space designed by Tadao Ando. Focuses on architecture and socially engaged art. Reservations required."
+  location: "Lincoln Park"
+  url: "https://wrightwood659.org/"
+  friends: false
+  type: museum
+  keywords: architecture, tadao ando, contemporary art, exhibitions
+
+- name: "Richard Gray Gallery"
+  description: "Established 1963, one of Chicago's most prominent galleries. Specializes in modern and contemporary art with an international roster of artists."
+  location: "Chicago"
+  url: "https://www.richardgraygallery.com/"
+  friends: false
+  type: gallery
+  keywords: art gallery, modern art, contemporary art
+
+- name: "Art Institute of Chicago"
+  description: "Founded 1879, one of the oldest and largest art museums in the U.S. Home to 260,000+ artworks including American Gothic, Nighthawks, and A Sunday on La Grande Jatte."
+  location: "Grant Park"
+  url: "https://www.artic.edu/"
+  friends: false
+  type: museum
+  keywords: art museum, impressionism, world class, grant wood
+
+- name: "Bloom Plant Based Kitchen"
+  description: "100% plant-based and gluten-free restaurant by James Beard nominee Chef Rodolfo Cuadros. Michelin Bib Gourmand awarded. Chef's Counter available."
+  location: "Wicker Park"
+  url: "https://bloompb.com/"
+  friends: false
+  type: restaurant
+  subtype: vegetarian
+  keywords: vegan, plant-based, gluten-free, michelin, james beard
+
+- name: "Taqueria Chingón"
+  description: "Mexico City-inspired taqueria in Fulton Market by Marcos Ascencio and Oliver Poilevey. Michelin Guide 2024. Signature al pastor and creative tacos."
+  location: "Fulton Market"
+  url: "https://www.taqueriachingon.com/"
+  friends: false
+  type: restaurant
+  subtype: mexican
+  keywords: tacos, mexican, al pastor, michelin, street food
+
+- name: "Lao Peng You"
+  description: "Northern Chinese restaurant by brothers Eric and Daniel Wat. Handmade dumplings and noodles daily. 'Old friend' in Chinese. BYOB, first come first serve."
+  location: "Ukrainian Village"
+  url: "https://www.oldfriendchicago.com/"
+  friends: false
+  type: restaurant
+  subtype: chinese
+  keywords: chinese, dumplings, noodles, byob, handmade
+
+- name: "A Tavola"
+  description: "Authentic Northern Italian since 1995 by Chef Daniel Bocik. Signature gnocchi with browned butter sage. Half-price wine Tuesdays. Charming patio."
+  location: "Ukrainian Village"
+  url: "https://www.atavolachi.com/"
+  friends: false
+  type: restaurant
+  subtype: italian
+  keywords: italian, northern italian, pasta, romantic, wine
+
+- name: "Dongpo Impression"
+  description: "Authentic Sichuan cuisine since 2017. Specializes in Chuan Chuan Xiang (street style skewers) and Meishan-style food. Sister restaurant to Chengdu Impression."
+  location: "Chinatown"
+  url: "https://www.dongpoimpression.com/"
+  friends: false
+  type: restaurant
+  subtype: chinese
+  keywords: sichuan, chinese, spicy, chuan chuan, skewers
+
+- name: "Golden Bull"
+  description: "Traditional Cantonese restaurant since 1992. Famous for claypot rice and authentic Cantonese dishes. BYOB."
+  location: "Chinatown"
+  url: "https://goldenbull.menu/"
+  friends: false
+  type: restaurant
+  subtype: chinese
+  keywords: cantonese, chinese, claypot rice, byob
+
+- name: "Ed's Potsticker House"
+  description: "Northern Chinese restaurant in Bridgeport. Specializes in authentic dumplings and mandarin cuisine. BYOB."
+  location: "Bridgeport"
+  url: "http://www.orderpotstickerhouse.com/"
+  friends: false
+  type: restaurant
+  subtype: chinese
+  keywords: chinese, dumplings, northern chinese, byob
+
+- name: "Noon O Kabab"
+  description: "Family-owned Persian restaurant since 1997. Authentic Persian kabobs and traditional dishes. Four locations, Albany Park is the original."
+  location: "Albany Park"
+  url: "https://www.noonokabab.com/"
+  friends: false
+  type: restaurant
+  subtype: persian
+  keywords: persian, kabob, middle eastern, authentic
+
+- name: "Rose Mary"
+  description: "Chef Joe Flamm's debut restaurant blending Italian heritage with Croatian cuisine. Named for his grandmothers. Michelin Guide. 'Adriatic drinking food.'"
+  location: "Fulton Market"
+  url: "https://www.rosemarychicago.com/"
+  friends: false
+  type: restaurant
+  subtype: italian
+  keywords: italian, croatian, adriatic, michelin, joe flamm
+
+- name: "Saturday Audio Exchange"
+  description: "Chicago's audio specialist since 1982. New and pre-owned hi-fi equipment, turntables, digital and streaming. No commission sales staff. Dog friendly."
+  location: "Lakeview"
+  url: "https://www.saturdayaudio.com/"
+  friends: false
+  type: shop
+  subtype: audio
+  keywords: audio, hi-fi, turntables, music, stereo
+
+- name: "Andrew Rafacz Gallery"
+  description: "Contemporary art gallery in West Loop. Founded 2004 as Bucket Rider Gallery. Shows emerging and mid-career artists. NADA member."
+  location: "West Loop"
+  url: "https://andrewrafacz.com"
+  friends: false
+  type: gallery
+  keywords: contemporary art, gallery, nada, west loop
+
+- name: "Robin Richman"
+  description: "Boutique since 1997 in Bucktown. Concept apparel, accessories, and home goods from specialty designers. Wed-Fri by appointment, Sat 12-6."
+  location: "Bucktown"
+  url: "https://robinrichman.com/"
+  friends: true
+  type: shop
+  subtype: fashion
+  keywords: boutique, fashion, accessories, concept store
+
+- name: "Moth"
+  description: "Nordic and Japanese design boutique since 2015. Featuring emerging artists and designers from Scandinavia, Finland, and Japan."
+  location: "Bucktown"
+  url: "https://mothchicago.com/"
+  friends: false
+  type: shop
+  subtype: design
+  keywords: design, nordic, japanese, retail, boutique
+
+- name: "Miko's Italian Ice"
+  description: "Family-owned Italian ice since 1997. Made with real fruit, 30+ rotating flavors. Two locations in Logan Square and Irving Park."
+  location: "Logan Square"
+  url: "https://mikositalianice.com/"
+  friends: false
+  type: dessert
+  keywords: italian ice, dessert, fruit, family owned
+
+- name: "Ava's Italian Ice"
+  description: "Healthiest Italian ice in Chicago since 2018. Made from fresh organic fruit with no artificial colors or flavors. Dairy-free, nut-free, gluten-free."
+  location: "Bucktown"
+  url: "https://avasitalianice.com/"
+  friends: false
+  type: dessert
+  keywords: italian ice, organic, healthy, dessert
+
+- name: "Micro Center"
+  description: "Computer and electronics retailer since 1996. 25,000+ products, custom PC building, Apple-certified repairs. Chicagoland's tech destination."
+  location: "Bucktown"
+  url: "https://www.microcenter.com/site/stores/chicago.aspx"
+  friends: false
+  type: shop
+  subtype: electronics
+  keywords: electronics, computers, tech, repairs, pc building
+
+- name: "Logan Square Farmers Market"
+  description: "Only weekly year-round farmers market in Chicago since 2005. Named 'Best Farmers Market in Chicago' by Chicago Magazine in 2016. Sundays 8:30am-3pm."
+  location: "Logan Square"
+  url: "https://www.logansquarefarmersmarket.org/"
+  friends: false
+  type: market
+  keywords: farmers market, fresh produce, year-round, community
+
+- name: "Kimski"
+  description: "Korean-Polish fusion street food by chef Won Kim and Ed Marzewski. Famous for krautchi (kimchi/sauerkraut hybrid) and bulgogi cheese sandwiches."
+  location: "Bridgeport"
+  url: "https://www.kimskichicago.net"
+  friends: true
+  type: restaurant
+  subtype: korean
+  keywords: korean, polish, fusion, street food, bridgeport
+
+- name: "HaiSous Vietnamese Kitchen"
+  description: "Refined Vietnamese cuisine since 2017 by Chef Thai Dang. Five-time Michelin Bib Gourmand, four James Beard nominations. Famous caramelized fish sauce wings."
+  location: "Pilsen"
+  url: "https://www.haisous.com/"
+  friends: false
+  type: restaurant
+  subtype: vietnamese
+  keywords: vietnamese, michelin, james beard, pilsen, refined
+
+- name: "Virtue"
+  description: "Southern American restaurant by James Beard Award-winning Chef Erick Williams. Michelin Bib Gourmand since 2018. Contemporary take on cuisine from the great migration."
+  location: "Hyde Park"
+  url: "https://www.virtuerestaurant.com/"
+  friends: false
+  type: restaurant
+  subtype: american
+  keywords: southern, american, michelin, james beard, hyde park
+
+- name: "5 Rabanitos"
+  description: "Authentic Mexican by Chef Alfonso Sotelo since 2016. Flavors from Mexico City, Yucatán, and Oaxaca. BYOB. One block from National Museum of Mexican Art."
+  location: "Pilsen"
+  url: "https://5rabanitos.com/"
+  friends: false
+  type: restaurant
+  subtype: mexican
+  keywords: mexican, authentic, pilsen, byob, chef-driven
+
+- name: "Kura Revolving Sushi Bar"
+  description: "Innovative tech-interactive Japanese restaurant with revolving sushi since 2024. Robot service, all plates $3.40. Prize capsules after 15 plates."
+  location: "Skokie"
+  url: "https://kurasushi.com/locations/skokie-il"
+  friends: false
+  type: restaurant
+  subtype: japanese
+  keywords: sushi, japanese, revolving, tech, skokie
+
+- name: "Steingold's Bakehouse"
+  description: "Jewish deli and bagel shop since 2017. Takeout-only Humboldt Park location opened 2024. Classic bagels, sandwiches with pastrami and lox, gourmet spreads."
+  location: "Humboldt Park"
+  url: "https://www.steingoldsdeli.com/"
+  friends: false
+  type: bakery
+  keywords: bagels, jewish deli, bakery, sandwiches
+
+- name: "Rotofugi"
+  description: "Designer toy store and gallery since 2004. Ten-time Designer Toy Award winner. Vinyl figures, blind boxes, plush, and monthly art exhibits."
+  location: "Lincoln Park"
+  url: "https://rotofugi.com/"
+  friends: false
+  type: shop
+  subtype: toys
+  keywords: designer toys, art gallery, vinyl figures, collectibles
+
+- name: "You Are Beautiful"
+  description: "Public art project turned store since 2018. Founded by Matthew Hoffman in 2002. Meaningful gifts, stickers, gallery exhibitions, and workshops."
+  location: "Avondale"
+  url: "https://you-are-beautiful.com/pages/gallery"
+  friends: true
+  type: shop
+  subtype: art
+  keywords: art, stickers, public art, gallery, gifts
+
+- name: "CA Film Lab"
+  description: "Woman- and Latina-owned film lab since 2022. C41, B&W, E6, and ECN2 processing. First storefront opened 2025 with retail, photo studio, and darkroom."
+  location: "Logan Square"
+  url: "https://www.cafilmlab.com/"
+  friends: false
+  type: shop
+  subtype: photography
+  keywords: film lab, photography, film developing, darkroom
+
+- name: "Dodd Camera"
+  description: "Family-owned camera shop since 1891, Chicago location since 2008. Buy/sell/trade gear, film developing, printing, rentals, repairs, and free workshops."
+  location: "Logan Square"
+  url: "https://doddcamera.com/"
+  friends: false
+  type: shop
+  subtype: photography
+  keywords: camera, photography, film, rental, repair
+
+- name: "Summertime Japanese Restaurant"
+  description: "Authentic izakaya-style cuisine with private karaoke rooms and live entertainment. Fresh sashimi, grilled skewers, ramen, and traditional small plates."
+  location: "Mount Prospect"
+  url: "https://www.summertimejapaneserestaurant.com"
+  friends: false
+  type: restaurant
+  subtype: japanese
+  keywords: japanese, izakaya, karaoke, sashimi, suburban
+
+- name: "Kasia's Deli"
+  description: "Ukrainian Village tradition since 1982. Award-winning pierogi named 'Chicago's Best' every year since 1999. Featured in '1,000 Foods to Eat Before You Die.'"
+  location: "Ukrainian Village"
+  url: "https://www.kasiasdeli.com/"
+  friends: false
+  type: restaurant
+  subtype: polish
+  keywords: polish, pierogi, eastern european, deli, award-winning
+
+- name: "Life on Marz Community Club"
+  description: "Brewery taproom and cafe since 2021 inspired by Eastern European workers' clubs. Marz beers, nitro coffee, CBD seltzers, sausages from Makowski's. Dog-friendly."
+  location: "Logan Square"
+  url: "https://www.lifeonmarz.club/"
+  friends: true
+  type: bar
+  keywords: brewery, coffee, taproom, dog friendly, community
+
+- name: "Rainbo Club"
+  description: "Iconic dive bar since 1936. Former burlesque stage, featured in High Fidelity and on Liz Phair's Exile in Guyville cover. Open 365 days, 4pm-2am."
+  location: "Wicker Park"
+  url: ""
+  friends: false
+  type: bar
+  keywords: dive bar, iconic, hipster, wicker park, neon sign
+
+- name: "Sportsman's Club"
+  description: "Neighborhood tavern since 2013 in original 1900s Polish immigrant bar. Spirit-forward cocktails that change daily, Art Deco bar, taxidermy, amaro machine."
+  location: "Ukrainian Village"
+  url: "https://drinkingandgathering.com/"
+  friends: false
+  type: bar
+  keywords: cocktails, craft cocktails, neighborhood bar, art deco
+
+- name: "Cafe Tola"
+  description: "Chicago-born, Latina-owned cafe since 2014. Specializing in crispy hand-rolled empanadas and signature horchata lattes. Four Chicago locations."
+  location: "Lakeview"
+  url: "http://www.cafetola.com/"
+  friends: false
+  type: cafe
+  keywords: empanadas, mexican, coffee, horchata, latina-owned
+
+- name: "Bingo Tea"
+  description: "Bubble tea shop in Chinatown since 2018. Fresh fruit teas, yogurt drinks, classic milk teas. Famous for pistachio milk tea and jujube tea."
+  location: "Chinatown"
+  url: "https://bingo-tea.res-menu.com/"
+  friends: false
+  type: cafe
+  keywords: bubble tea, boba, chinatown, fruit tea
+
+- name: "Mildblend Supply Co"
+  description: "Menswear boutique since 2011. Specializes in raw and dry denim, American-made boots. Free hemming with denim purchases, chain stitch hemming available."
+  location: "Wicker Park"
+  url: ""
+  friends: true
+  type: shop
+  subtype: fashion
+  keywords: denim, menswear, boots, raw denim, boutique
+
+- name: "Lab Rabbit Optics"
+  description: "Luxury eyewear shop since 2010. Named 'Best Eyewear Shop in Chicago' by Chicago Reader. 400+ handmade frames, in-house lens cutting. By appointment."
+  location: "Ukrainian Village"
+  url: "https://www.labrabbit.com"
+  friends: true
+  type: shop
+  subtype: eyewear
+  keywords: eyewear, glasses, optical, luxury, independent
+
+- name: "Lula Cafe"
+  description: "Inventive farm-to-table restaurant since 1999 by Jason Hammel. Three-time James Beard nominee. Famous for brunch (no reservations), Monday farm dinners $38. Spans three storefronts."
+  location: "Logan Square"
+  url: "https://www.lulacafe.com/"
+  friends: false
+  type: restaurant
+  subtype: american
+  keywords: farm-to-table, brunch, seasonal, organic, james beard
+
+- name: "The Gage"
+  description: "Gastropub since 2007, flagship of Gage Hospitality Group. Michelin Plate 2022, OpenTable Top 100 Restaurant in America. Across from Millennium Park. Vintage atmosphere inspired by Irish pubs."
+  location: "Theater District"
+  url: "https://thegagechicago.com/"
+  friends: false
+  type: restaurant
+  subtype: american
+  keywords: gastropub, irish, michigan avenue, scotch eggs, fish and chips
+
+- name: "Ethiopian Diamond Restaurant & Bar"
+  description: "Oldest Ethiopian restaurant in Chicago since 1996. Two locations, Edgewater is the original. Famous for smoky 'Diamond berbere' sauce, beef tartar, and shimbra asa."
+  location: "Edgewater"
+  url: "https://ethiopiandiamondrestaurants.com/"
+  friends: false
+  type: restaurant
+  subtype: ethiopian
+  keywords: ethiopian, african, authentic, injera, vegetarian options
+
+- name: "Taste of Lebanon"
+  description: "Family-owned Lebanese street food since 1996 by Ali Faraj. Cash-only takeout spot famous for falafel, shawarma, and lamb kofta wraps. Many vegan/vegetarian options."
+  location: "Andersonville"
+  url: "https://taste-of-lebanon.res-menu.com/"
+  friends: false
+  type: restaurant
+  subtype: middle_eastern
+  keywords: lebanese, middle eastern, falafel, shawarma, cash only
+
+- name: "Al Bawadi Grill"
+  description: "Premier Middle Eastern and Palestinian restaurant since 2008. Everything made from scratch including hand-formed kebabs on steel skewers. 50+ meza items. Zabiha Halal certified."
+  location: "Bridgeview"
+  url: "https://albawadigrill.com/"
+  friends: false
+  type: restaurant
+  subtype: middle_eastern
+  keywords: middle eastern, palestinian, halal, kebabs, meza
+
+- name: "Chicago Symphony Orchestra"
+  description: "One of America's 'Big Five' orchestras since 1891. 65 Grammy Awards. Based at Symphony Center, summer season at Ravinia Festival. 150+ concerts per year."
+  location: "Grant Park"
+  url: "https://cso.org/"
+  friends: false
+  type: venue
+  keywords: symphony, orchestra, classical music, concert hall, grammy
+
+- name: "Empty Bottle"
+  description: "Iconic music venue since 1992. Named one of 'Best Rock Clubs in America' by Rolling Stone. 400-capacity space hosting indie, punk, experimental, jazz. Open 7 nights a week."
+  location: "Ukrainian Village"
+  url: "https://www.emptybottle.com/"
+  friends: false
+  type: venue
+  keywords: music venue, live music, indie, punk, rock club
+
+- name: "Black Dog Gelato"
+  description: "Artisanal gelato and sorbet since 2007 by former Scylla pastry chef Jessica Oloroso. Chicago-style Northern gelato made fresh daily with local dairy, seasonal produce, high-quality chocolate."
+  location: "Ukrainian Village"
+  url: "https://blackdoggelato.com/"
+  friends: false
+  type: dessert
+  keywords: gelato, sorbet, italian, dessert, artisanal
+
+- name: "Kumiko"
+  description: "Japanese dining bar by Julia Momosé. Four consecutive years named Best Bar in Midwest USA. World's 50 Best Bars. Seasonal tasting menu with cocktail, sake, or spirit-free pairings."
+  location: "West Loop"
+  url: "https://barkumiko.com/"
+  friends: false
+  type: bar
+  keywords: cocktails, japanese, omakase, craft cocktails, west loop

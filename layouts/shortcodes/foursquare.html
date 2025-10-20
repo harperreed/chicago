@@ -1,0 +1,8 @@
+{{/* ABOUTME: Simple Hugo shortcode that outputs all Foursquare lists from data/foursquare.yaml */}}
+{{/* ABOUTME: Usage: {{< foursquare >}} - just dumps out all the lists */}}
+
+<ul>
+{{- range .Site.Data.foursquare -}}
+  <li><a href="{{ .url }}">{{ .title }}</a></li>
+{{- end -}}
+</ul>

@@ -1,0 +1,12 @@
+baseURL = 'http://chicago.harperreed.com/'
+languageCode = 'en-us'
+title = "Harper's Incomplete Chicago Guide"
+description = "Chicago!"
+
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+
+[Params]
+email = 'harper@modest.com'
+name = 'Harper'
+twitter = 'harper'

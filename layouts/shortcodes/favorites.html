@@ -1,0 +1,65 @@
+{{/* ABOUTME: Simple Hugo shortcode that outputs favorites list from data/favorites.yaml */}}
+{{/* ABOUTME: Usage: {{< favorites >}} - groups by type, then subtype for restaurants/shops */}}
+
+{{ $currentType := "" }}
+{{ $currentSubtype := "" }}
+{{ $lastType := "" }}
+
+{{ range sort .Site.Data.favorites "type" "desc" }}
+    {{ $sortKey := printf "%s-%s-%s" .type (default "zzz" .subtype) .name }}
+{{ end }}
+
+{{ range sort .Site.Data.favorites "type" }}
+    {{ $item := . }}
+    {{ $itemSort := printf "%s|%s|%s" .type (default "zzz" .subtype) .name }}
+{{ end }}
+
+{{ $sorted := slice }}
+{{ range .Site.Data.favorites }}
+    {{ $sortKey := printf "%s|%s|%s" .type (default "zzz" .subtype) .name }}
+    {{ $sorted = $sorted | append (dict "key" $sortKey "item" .) }}
+{{ end }}
+{{ $sorted = sort $sorted "key" "desc" }}
+
+{{ range $sorted }}
+    {{ $item := .item }}
+
+    {{/* Handle type changes */}}
+    {{ if ne $item.type $currentType }}
+        {{ if ne $currentType "" }}</ul>{{ end }}
+        <h3>{{ $item.type | title }}s</h3>
+        {{ $currentType = $item.type }}
+        {{ $currentSubtype = "" }}
+    {{ end }}
+
+    {{/* Handle subtype changes for restaurant/shop */}}
+    {{ if and $item.subtype (in (slice "restaurant" "shop") $item.type) }}
+        {{ if ne $item.subtype $currentSubtype }}
+            {{ if ne $currentSubtype "" }}</ul>{{ end }}
+            <h4>{{ $item.subtype | title }}</h4>
+            <ul>
+            {{ $currentSubtype = $item.subtype }}
+        {{ end }}
+    {{ else }}
+        {{/* No subtype - start list if needed */}}
+        {{ if eq $currentSubtype "" }}
+            <ul>
+            {{ $currentSubtype = "none" }}
+        {{ end }}
+    {{ end }}
+
+    {{/* Output the item */}}
+<li
+    data-name="{{ $item.name }}"
+    {{ if $item.japanese }}data-japanese="{{ $item.japanese }}"{{ end }}
+    data-type="{{ $item.type }}"
+    {{ if $item.subtype }}data-subtype="{{ $item.subtype }}"{{ end }}
+    {{ if $item.location }}data-location="{{ $item.location }}"{{ end }}
+    {{ if $item.friends }}data-friends="{{ $item.friends }}"{{ end }}
+    {{ if $item.keywords }}data-keywords="{{ $item.keywords }}"{{ end }}
+    {{ if $item.url }}data-url="{{ $item.url }}"{{ end }}
+>
+    <strong>{{ $item.name }}{{ if $item.japanese }} （{{ $item.japanese }}）{{ end }}{{ if $item.friends }} ⭐{{ end }}</strong> - {{ $item.description }}{{ if $item.location }} - {{ $item.location }}{{ end }}{{ if $item.url }} - <a href="{{ $item.url }}">link</a>{{ end }}
+</li>
+{{ end }}
+</ul>

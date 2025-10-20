@@ -1,0 +1,4 @@
+{{/* ABOUTME: Simple Hugo shortcode that outputs thanks list from data/thanks.yaml */}}
+{{/* ABOUTME: Usage: {{< thanks >}} - just dumps out all the names */}}
+
+Thanks to {{ range $index, $person := .Site.Data.thanks }}{{ if $index }}, {{ end }}{{ $person.name }}{{ end }} and a lot of others over the years for taking me out to amazing places in chicago
