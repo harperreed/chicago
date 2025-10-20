@@ -3,23 +3,31 @@
 
 {{ $currentType := "" }}
 {{ $currentSubtype := "" }}
-{{ $lastType := "" }}
 
-{{ range sort .Site.Data.favorites "type" "desc" }}
-    {{ $sortKey := printf "%s-%s-%s" .type (default "zzz" .subtype) .name }}
+{{/* First pass: collect all unique types for the menu */}}
+{{ $types := slice }}
+{{ range .Site.Data.favorites }}
+    {{ if not (in $types .type) }}
+        {{ $types = $types | append .type }}
+    {{ end }}
 {{ end }}
+{{ $types = sort $types }}
 
-{{ range sort .Site.Data.favorites "type" }}
-    {{ $item := . }}
-    {{ $itemSort := printf "%s|%s|%s" .type (default "zzz" .subtype) .name }}
-{{ end }}
+{{/* Generate jump menu */}}
+<nav style="margin-bottom: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 4px;">
+    <strong>Jump to:</strong>
+    {{ range $index, $type := $types }}
+        {{ if gt $index 0 }} • {{ end }}
+        <a href="#{{ $type }}">{{ $type | title }}s</a>
+    {{ end }}
+</nav>
 
 {{ $sorted := slice }}
 {{ range .Site.Data.favorites }}
     {{ $sortKey := printf "%s|%s|%s" .type (default "zzz" .subtype) .name }}
     {{ $sorted = $sorted | append (dict "key" $sortKey "item" .) }}
 {{ end }}
-{{ $sorted = sort $sorted "key" "desc" }}
+{{ $sorted = sort $sorted "key" }}
 
 {{ range $sorted }}
     {{ $item := .item }}
@@ -27,7 +35,7 @@
     {{/* Handle type changes */}}
     {{ if ne $item.type $currentType }}
         {{ if ne $currentType "" }}</ul>{{ end }}
-        <h3>{{ $item.type | title }}s</h3>
+        <h3 id="{{ $item.type }}">{{ $item.type | title }}s</h3>
         {{ $currentType = $item.type }}
         {{ $currentSubtype = "" }}
     {{ end }}
@@ -36,7 +44,7 @@
     {{ if and $item.subtype (in (slice "restaurant" "shop") $item.type) }}
         {{ if ne $item.subtype $currentSubtype }}
             {{ if ne $currentSubtype "" }}</ul>{{ end }}
-            <h4>{{ $item.subtype | title }}</h4>
+            <h4>{{ $item.subtype | humanize }}</h4>
             <ul>
             {{ $currentSubtype = $item.subtype }}
         {{ end }}

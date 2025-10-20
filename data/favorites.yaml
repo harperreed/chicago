@@ -288,7 +288,7 @@
   url: "https://www.rosemarychicago.com/"
   friends: false
   type: restaurant
-  subtype: italian
+  subtype: croatian
   keywords: italian, croatian, adriatic, michelin, joe flamm
 
 - name: "Saturday Audio Exchange"
@@ -557,7 +557,7 @@
   url: "https://taste-of-lebanon.res-menu.com/"
   friends: false
   type: restaurant
-  subtype: middle_eastern
+  subtype: middle eastern
   keywords: lebanese, middle eastern, falafel, shawarma, cash only
 
 - name: "Al Bawadi Grill"
@@ -566,7 +566,7 @@
   url: "https://albawadigrill.com/"
   friends: false
   type: restaurant
-  subtype: middle_eastern
+  subtype: middle eastern
   keywords: middle eastern, palestinian, halal, kebabs, meza
 
 - name: "Chicago Symphony Orchestra"
@@ -600,3 +600,12 @@
   friends: false
   type: bar
   keywords: cocktails, japanese, omakase, craft cocktails, west loop
+
+- name: "Cho Sun Ok"
+  description: "Authentic Korean BBQ and traditional cuisine since 1980. Michelin-recommended. Famous for tabletop bulgogi, naengmyeon cold buckwheat noodles, and japchae. Chicago Reader favorite 2015. BYOB."
+  location: "Lincoln Square"
+  url: "http://chosunokrestaurant.com/"
+  friends: true
+  type: restaurant
+  subtype: korean
+  keywords: korean, bbq, bulgogi, naengmyeon, byob, michelin
