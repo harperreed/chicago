@@ -1,9 +1,12 @@
-# ABOUTME: Simple data file containing current favorite spots in Japan
+# ABOUTME: Simple data file containing current favorite spots in Chicago
 # ABOUTME: Just the basic list data that gets dumped out by the favorites shortcode
 
 - name: "Noodlebird"
   description: "A really wonderful macanese restaruant. Super tasty. "
   location: "Logan Square"
+  address: "2957 W Diversey Ave, Chicago, IL 60647"
+  lat: 41.93181
+  lng: -87.70113
   url: "https://www.noodlebird.com/"
   friends: true
   type: restaurant
@@ -13,6 +16,9 @@
 - name: "Handlebar"
   description: "Vegetarian & vegan comfort food served until midnight. Been going since 2003."
   location: "Wicker Park"
+  address: "2311 W North Ave, Chicago, IL 60647"
+  lat: 41.91025
+  lng: -87.68531
   url: "https://www.handlebarchicago.com/"
   friends: true
   type: restaurant
@@ -22,6 +28,9 @@
 - name: "Pequod's Pizza"
   description: "Legendary deep dish pizza since 1970, famous for its caramelized crust. I don't like deep dish, but this isn't horrible"
   location: "Lincoln Park"
+  address: "2207 N Clybourn Ave, Chicago, IL 60614"
+  lat: 41.92184
+  lng: -87.66445
   url: "https://pequodspizza.com/chicago/"
   friends: false
   type: restaurant
@@ -31,6 +40,9 @@
 - name: "Akahoshi Ramen"
   description: "Named one of Bon Appétit's 2024 best new restaurants. Everything made in-house including noodles. Run by Reddit's 'Ramen_Lord'."
   location: "Logan Square"
+  address: "2340 N California Ave, Suite B, Chicago, IL 60647"
+  lat: 41.92409
+  lng: -87.69767
   url: "https://www.akahoshiramen.com/"
   friends: true
   type: restaurant
@@ -40,6 +52,9 @@
 - name: "Tufano's Vernon Park Tap"
   description: "Classic red-sauce Italian joint since 1930. No sign on the door, no menus (chalkboard only). Featured on Diners, Drive-Ins and Dives."
   location: "University Village"
+  address: "1073 W Vernon Park Pl, Chicago, IL 60607"
+  lat: 41.87693
+  lng: -87.65482
   url: "https://sites.google.com/site/tufanosrestaurant/"
   friends: true
   type: restaurant
@@ -49,6 +64,9 @@
 - name: "Tensuke Market & Food Court"
   description: "Japanese market with food court serving fresh sushi, ramen, tonkatsu, and curry. Family-owned for over 20 years with daily deliveries."
   location: "Elk Grove Village"
+  address: "3 S Arlington Heights Rd, Elk Grove Village, IL 60007"
+  lat: 42.00392
+  lng: -87.98040
   url: "https://www.tensuke.com/"
   friends: false
   type: restaurant
@@ -58,6 +76,9 @@
 - name: "Dicey's Pizza & Tavern"
   description: "Tavern-style thin-crust pizza with unique toppings. Named by Esquire as one of the best places for Chicago tavern-style pizza in the U.S."
   location: "Ukrainian Village"
+  address: "2109 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89580
+  lng: -87.67951
   url: "https://www.diceystavern.com/chicago"
   friends: false
   type: restaurant
@@ -67,6 +88,9 @@
 - name: "Fatso's Last Stand"
   description: "Elevated hot dog stand serving char dogs, burgers, and late-night eats. Won 'Best Burger Champion' at Roscoe Village Burger Fest 2019."
   location: "Ukrainian Village"
+  address: "2258 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89589
+  lng: -87.68489
   url: "https://www.fatsoslaststand.com/"
   friends: false
   type: restaurant
@@ -76,6 +100,9 @@
 - name: "Omakase Shoji"
   description: "High-end omakase with 20-course kaiseki menu. Intimate 10-seat dining room with fish flown in from Japan multiple times a week."
   location: "West Town"
+  address: "1641 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89589
+  lng: -87.66782
   url: "https://www.omakaseshoji.com"
   friends: true
   type: restaurant
@@ -85,6 +112,9 @@
 - name: "Kai Zan"
   description: "Creative omakase-style sushi by the legendary Vizconde twins. Michelin Bib Gourmand, named Best New Sushi 2013 by TimeOut Chicago."
   location: "Humboldt Park"
+  address: "2557 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89555
+  lng: -87.69153
   url: "http://www.eatatkaizan.com/"
   friends: false
   type: restaurant
@@ -94,6 +124,9 @@
 - name: "Amitabul"
   description: "Buddhist Korean vegan cuisine since 1995. Prepared without salt, sugar, or oil. Try the 'Dark Side of the Moon' rice noodle dish."
   location: "Norwood Park"
+  address: "6207 N Milwaukee Ave, Chicago, IL 60646"
+  lat: 41.99406
+  lng: -87.78445
   url: "https://www.amitabulvegan.com"
   friends: false
   type: restaurant
@@ -103,6 +136,9 @@
 - name: "Pho Nam Lua"
   description: "Family-owned Vietnamese restaurant since 2014. Ranked #1 on Steve Dolinsky's Chicago Pho Crawl for best pho in the city."
   location: "North Park"
+  address: "6261 N McCormick Blvd, Chicago, IL 60659"
+  lat: 41.99450
+  lng: -87.71150
   url: "https://www.pho5lua.com/"
   friends: false
   type: restaurant
@@ -112,6 +148,9 @@
 - name: "Pho Loan"
   description: "Authentic Vietnamese in Uptown's Little Vietnam. Known for bánh khọt rice pancakes and excellent bún cá trà vinh."
   location: "Uptown"
+  address: "1114 W Argyle St, Chicago, IL 60640"
+  lat: 41.97306
+  lng: -87.65900
   url: "https://www.pholoan.com"
   friends: false
   type: restaurant
@@ -121,6 +160,9 @@
 - name: "Star Lounge Coffee Bar"
   description: "Dark Matter Coffee's flagship cafe. Long wood bar, outdoor patio with local artist installations, diverse brewing options."
   location: "Ukrainian Village"
+  address: "2521 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89552
+  lng: -87.68770
   url: "https://www.darkmattercoffee.com/pages/star-lounge"
   friends: false
   type: cafe
@@ -129,6 +171,9 @@
 - name: "Metric Coffee"
   description: "Certified B Corporation coffee roaster since 2013. Roasted on a self-restored '61 Probat UG 15 for exceptionally balanced, sweet, and clean coffees."
   location: "Fulton Market"
+  address: "2021 W Fulton St, Chicago, IL 60612"
+  lat: 41.88660
+  lng: -87.67760
   url: "https://metriccoffee.com/"
   friends: false
   type: cafe
@@ -137,6 +182,9 @@
 - name: "Big Star"
   description: "Honky tonk-themed taco bar housed in a defunct 1940s gas station. Authentic Mexican street food by Paul Kahan, bourbon and beer focused."
   location: "Wicker Park"
+  address: "1531 N Damen Ave, Chicago, IL 60622"
+  lat: 41.90950
+  lng: -87.67720
   url: "https://www.bigstarchicago.com/"
   friends: true
   type: restaurant
@@ -146,6 +194,9 @@
 - name: "Avec"
   description: "Original West Loop location since 2003. Tiny, cramped Mediterranean restaurant by Paul Kahan. Still going strong after 20+ years."
   location: "West Loop"
+  address: "615 W Randolph St, Chicago, IL 60661"
+  lat: 41.88422
+  lng: -87.64338
   url: "https://www.avecrestaurant.com/"
   friends: true
   type: restaurant
@@ -155,6 +206,9 @@
 - name: "Publican Quality Bread"
   description: "Bakery by Paul Kahan with naturally leavened breads and heritage grains. James Beard Award-winning baker Greg Wade. Try the buckwheat chocolate croissants."
   location: "West Town"
+  address: "1759 W Grand Ave, Chicago, IL 60622"
+  lat: 41.89069
+  lng: -87.67183
   url: "https://www.publicanqualitybread.com/"
   friends: true
   type: bakery
@@ -163,6 +217,9 @@
 - name: "Publican Quality Meats"
   description: "Butcher shop, cafe, and market in Fulton Market. Responsibly raised meats, house-cured charcuterie, and artisanal provisions. Part of One Off Hospitality."
   location: "Fulton Market"
+  address: "825 W Fulton Market, Chicago, IL 60607"
+  lat: 41.88660
+  lng: -87.64854
   url: "https://www.publicanqualitymeats.com/"
   friends: true
   type: restaurant
@@ -172,6 +229,9 @@
 - name: "Yuzu Sushi & Robata Grill"
   description: "Japanese restaurant since 2011 by former journalist Yut Vong. Creative sushi rolls and robata focusing on young urban diners."
   location: "West Town"
+  address: "1751 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89590
+  lng: -87.67070
   url: "https://www.yuzuchicago.com/"
   friends: true
   type: restaurant
@@ -181,6 +241,9 @@
 - name: "Museum of Contemporary Art Chicago"
   description: "Founded 1967, one of the world's largest contemporary art venues. 2,500+ pieces of post-WWII art. Free for Illinois residents on Tuesdays 5-9pm."
   location: "Streeterville"
+  address: "220 E Chicago Ave, Chicago, IL 60611"
+  lat: 41.89722
+  lng: -87.62104
   url: "https://mcachicago.org/"
   friends: false
   type: museum
@@ -189,6 +252,9 @@
 - name: "Wrightwood 659"
   description: "Non-commercial exhibition space designed by Tadao Ando. Focuses on architecture and socially engaged art. Reservations required."
   location: "Lincoln Park"
+  address: "659 W Wrightwood Ave, Chicago, IL 60614"
+  lat: 41.92883
+  lng: -87.64503
   url: "https://wrightwood659.org/"
   friends: false
   type: museum
@@ -197,6 +263,9 @@
 - name: "Richard Gray Gallery"
   description: "Established 1963, one of Chicago's most prominent galleries. Specializes in modern and contemporary art with an international roster of artists."
   location: "Chicago"
+  address: "875 N Michigan Ave, Suite 3800, Chicago, IL 60611"
+  lat: 41.89877
+  lng: -87.62293
   url: "https://www.richardgraygallery.com/"
   friends: false
   type: gallery
@@ -205,6 +274,9 @@
 - name: "Art Institute of Chicago"
   description: "Founded 1879, one of the oldest and largest art museums in the U.S. Home to 260,000+ artworks including American Gothic, Nighthawks, and A Sunday on La Grande Jatte."
   location: "Grant Park"
+  address: "111 S Michigan Ave, Chicago, IL 60603"
+  lat: 41.87955
+  lng: -87.62386
   url: "https://www.artic.edu/"
   friends: false
   type: museum
@@ -213,6 +285,9 @@
 - name: "Bloom Plant Based Kitchen"
   description: "100% plant-based and gluten-free restaurant by James Beard nominee Chef Rodolfo Cuadros. Michelin Bib Gourmand awarded. Chef's Counter available."
   location: "Wicker Park"
+  address: "1559 N Milwaukee Ave, Chicago, IL 60622"
+  lat: 41.90987
+  lng: -87.67645
   url: "https://bloompb.com/"
   friends: false
   type: restaurant
@@ -222,6 +297,9 @@
 - name: "Taqueria Chingón"
   description: "Mexico City-inspired taqueria in Fulton Market by Marcos Ascencio and Oliver Poilevey. Michelin Guide 2024. Signature al pastor and creative tacos."
   location: "Fulton Market"
+  address: "817 W Fulton Market, Chicago, IL 60607"
+  lat: 41.88662
+  lng: -87.64788
   url: "https://www.taqueriachingon.com/"
   friends: false
   type: restaurant
@@ -231,6 +309,9 @@
 - name: "Lao Peng You"
   description: "Northern Chinese restaurant by brothers Eric and Daniel Wat. Handmade dumplings and noodles daily. 'Old friend' in Chinese. BYOB, first come first serve."
   location: "Ukrainian Village"
+  address: "2020 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89608
+  lng: -87.67789
   url: "https://www.oldfriendchicago.com/"
   friends: false
   type: restaurant
@@ -240,6 +321,9 @@
 - name: "A Tavola"
   description: "Authentic Northern Italian since 1995 by Chef Daniel Bocik. Signature gnocchi with browned butter sage. Half-price wine Tuesdays. Charming patio."
   location: "Ukrainian Village"
+  address: "2148 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89604
+  lng: -87.68142
   url: "https://www.atavolachi.com/"
   friends: false
   type: restaurant
@@ -249,6 +333,9 @@
 - name: "Dongpo Impression"
   description: "Authentic Sichuan cuisine since 2017. Specializes in Chuan Chuan Xiang (street style skewers) and Meishan-style food. Sister restaurant to Chengdu Impression."
   location: "Chinatown"
+  address: "228 W Cermak Rd, Chicago, IL 60616"
+  lat: 41.85303
+  lng: -87.63348
   url: "https://www.dongpoimpression.com/"
   friends: false
   type: restaurant
@@ -258,6 +345,9 @@
 - name: "Golden Bull"
   description: "Traditional Cantonese restaurant since 1992. Famous for claypot rice and authentic Cantonese dishes. BYOB."
   location: "Chinatown"
+  address: "242 W Cermak Rd, Chicago, IL 60616"
+  lat: 41.85303
+  lng: -87.63380
   url: "https://goldenbull.menu/"
   friends: false
   type: restaurant
@@ -267,6 +357,9 @@
 - name: "Ed's Potsticker House"
   description: "Northern Chinese restaurant in Bridgeport. Specializes in authentic dumplings and mandarin cuisine. BYOB."
   location: "Bridgeport"
+  address: "3139 S Halsted St, Chicago, IL 60608"
+  lat: 41.83690
+  lng: -87.64590
   url: "http://www.orderpotstickerhouse.com/"
   friends: false
   type: restaurant
@@ -276,6 +369,9 @@
 - name: "Noon O Kabab"
   description: "Family-owned Persian restaurant since 1997. Authentic Persian kabobs and traditional dishes. Four locations, Albany Park is the original."
   location: "Albany Park"
+  address: "4701 N Kedzie Ave, Chicago, IL 60625"
+  lat: 41.96639
+  lng: -87.70817
   url: "https://www.noonokabab.com/"
   friends: false
   type: restaurant
@@ -285,6 +381,9 @@
 - name: "Rose Mary"
   description: "Chef Joe Flamm's debut restaurant blending Italian heritage with Croatian cuisine. Named for his grandmothers. Michelin Guide. 'Adriatic drinking food.'"
   location: "Fulton Market"
+  address: "932 W Fulton Market, Chicago, IL 60607"
+  lat: 41.88698
+  lng: -87.65118
   url: "https://www.rosemarychicago.com/"
   friends: false
   type: restaurant
@@ -294,6 +393,9 @@
 - name: "Saturday Audio Exchange"
   description: "Chicago's audio specialist since 1982. New and pre-owned hi-fi equipment, turntables, digital and streaming. No commission sales staff. Dog friendly."
   location: "Lakeview"
+  address: "1021 W Belmont Ave, Chicago, IL 60657"
+  lat: 41.93965
+  lng: -87.65496
   url: "https://www.saturdayaudio.com/"
   friends: false
   type: shop
@@ -303,6 +405,9 @@
 - name: "Andrew Rafacz Gallery"
   description: "Contemporary art gallery in West Loop. Founded 2004 as Bucket Rider Gallery. Shows emerging and mid-career artists. NADA member."
   location: "West Loop"
+  address: "1749 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89560
+  lng: -87.67150
   url: "https://andrewrafacz.com"
   friends: false
   type: gallery
@@ -311,6 +416,9 @@
 - name: "Robin Richman"
   description: "Boutique since 1997 in Bucktown. Concept apparel, accessories, and home goods from specialty designers. Wed-Fri by appointment, Sat 12-6."
   location: "Bucktown"
+  address: "2108 N Damen Ave, Chicago, IL 60647"
+  lat: 41.91985
+  lng: -87.67793
   url: "https://robinrichman.com/"
   friends: true
   type: shop
@@ -320,6 +428,9 @@
 - name: "Moth"
   description: "Nordic and Japanese design boutique since 2015. Featuring emerging artists and designers from Scandinavia, Finland, and Japan."
   location: "Bucktown"
+  address: "2008 N Damen Ave, Chicago, IL 60647"
+  lat: 41.91807
+  lng: -87.67791
   url: "https://mothchicago.com/"
   friends: false
   type: shop
@@ -329,6 +440,9 @@
 - name: "Miko's Italian Ice"
   description: "Family-owned Italian ice since 1997. Made with real fruit, 30+ rotating flavors. Two locations in Logan Square and Irving Park."
   location: "Logan Square"
+  address: "2236 N Sacramento Ave, Chicago, IL 60647"
+  lat: 41.92273
+  lng: -87.70231
   url: "https://mikositalianice.com/"
   friends: false
   type: dessert
@@ -337,6 +451,9 @@
 - name: "Ava's Italian Ice"
   description: "Healthiest Italian ice in Chicago since 2018. Made from fresh organic fruit with no artificial colors or flavors. Dairy-free, nut-free, gluten-free."
   location: "Bucktown"
+  address: "1814 N Western Ave, Chicago, IL 60647"
+  lat: 41.91452
+  lng: -87.68754
   url: "https://avasitalianice.com/"
   friends: false
   type: dessert
@@ -345,6 +462,9 @@
 - name: "Micro Center"
   description: "Computer and electronics retailer since 1996. 25,000+ products, custom PC building, Apple-certified repairs. Chicagoland's tech destination."
   location: "Bucktown"
+  address: "2645 N Elston Ave, Chicago, IL 60647"
+  lat: 41.93040
+  lng: -87.68286
   url: "https://www.microcenter.com/site/stores/chicago.aspx"
   friends: false
   type: shop
@@ -354,6 +474,9 @@
 - name: "Logan Square Farmers Market"
   description: "Only weekly year-round farmers market in Chicago since 2005. Named 'Best Farmers Market in Chicago' by Chicago Magazine in 2016. Sundays 8:30am-3pm."
   location: "Logan Square"
+  address: "3107 W Logan Blvd, Chicago, IL 60647"
+  lat: 41.92795
+  lng: -87.70525
   url: "https://www.logansquarefarmersmarket.org/"
   friends: false
   type: market
@@ -362,6 +485,9 @@
 - name: "Kimski"
   description: "Korean-Polish fusion street food by chef Won Kim and Ed Marzewski. Famous for krautchi (kimchi/sauerkraut hybrid) and bulgogi cheese sandwiches."
   location: "Bridgeport"
+  address: "960 W 31st St, Chicago, IL 60608"
+  lat: 41.83800
+  lng: -87.64400
   url: "https://www.kimskichicago.net"
   friends: true
   type: restaurant
@@ -371,6 +497,9 @@
 - name: "HaiSous Vietnamese Kitchen"
   description: "Refined Vietnamese cuisine since 2017 by Chef Thai Dang. Five-time Michelin Bib Gourmand, four James Beard nominations. Famous caramelized fish sauce wings."
   location: "Pilsen"
+  address: "1800 S Carpenter St, Chicago, IL 60608"
+  lat: 41.85700
+  lng: -87.65300
   url: "https://www.haisous.com/"
   friends: false
   type: restaurant
@@ -380,6 +509,9 @@
 - name: "Virtue"
   description: "Southern American restaurant by James Beard Award-winning Chef Erick Williams. Michelin Bib Gourmand since 2018. Contemporary take on cuisine from the great migration."
   location: "Hyde Park"
+  address: "1462 E 53rd St, Chicago, IL 60615"
+  lat: 41.79967
+  lng: -87.58925
   url: "https://www.virtuerestaurant.com/"
   friends: false
   type: restaurant
@@ -389,6 +521,9 @@
 - name: "5 Rabanitos"
   description: "Authentic Mexican by Chef Alfonso Sotelo since 2016. Flavors from Mexico City, Yucatán, and Oaxaca. BYOB. One block from National Museum of Mexican Art."
   location: "Pilsen"
+  address: "1758 W 18th St, Chicago, IL 60608"
+  lat: 41.85799
+  lng: -87.67094
   url: "https://5rabanitos.com/"
   friends: false
   type: restaurant
@@ -398,6 +533,9 @@
 - name: "Kura Revolving Sushi Bar"
   description: "Innovative tech-interactive Japanese restaurant with revolving sushi since 2024. Robot service, all plates $3.40. Prize capsules after 15 plates."
   location: "Skokie"
+  address: "9741 Skokie Blvd, Skokie, IL 60077"
+  lat: 42.03600
+  lng: -87.73200
   url: "https://kurasushi.com/locations/skokie-il"
   friends: false
   type: restaurant
@@ -407,6 +545,9 @@
 - name: "Steingold's Bakehouse"
   description: "Jewish deli and bagel shop since 2017. Takeout-only Humboldt Park location opened 2024. Classic bagels, sandwiches with pastrami and lox, gourmet spreads."
   location: "Humboldt Park"
+  address: "2939 W Grand Ave, Chicago, IL 60622"
+  lat: 41.89100
+  lng: -87.69800
   url: "https://www.steingoldsdeli.com/"
   friends: false
   type: bakery
@@ -415,6 +556,9 @@
 - name: "Rotofugi"
   description: "Designer toy store and gallery since 2004. Ten-time Designer Toy Award winner. Vinyl figures, blind boxes, plush, and monthly art exhibits."
   location: "Lincoln Park"
+  address: "2780 N Lincoln Ave, Chicago, IL 60614"
+  lat: 41.93219
+  lng: -87.65845
   url: "https://rotofugi.com/"
   friends: false
   type: shop
@@ -424,6 +568,9 @@
 - name: "You Are Beautiful"
   description: "Public art project turned store since 2018. Founded by Matthew Hoffman in 2002. Meaningful gifts, stickers, gallery exhibitions, and workshops."
   location: "Avondale"
+  address: "3368 N Elston Ave, Chicago, IL 60618"
+  lat: 41.94251
+  lng: -87.70329
   url: "https://you-are-beautiful.com/pages/gallery"
   friends: true
   type: shop
@@ -433,6 +580,9 @@
 - name: "CA Film Lab"
   description: "Woman- and Latina-owned film lab since 2022. C41, B&W, E6, and ECN2 processing. First storefront opened 2025 with retail, photo studio, and darkroom."
   location: "Logan Square"
+  address: "3501 W Armitage Ave, Chicago, IL 60647"
+  lat: 41.91740
+  lng: -87.71710
   url: "https://www.cafilmlab.com/"
   friends: false
   type: shop
@@ -442,6 +592,9 @@
 - name: "Dodd Camera"
   description: "Family-owned camera shop since 1891, Chicago location since 2008. Buy/sell/trade gear, film developing, printing, rentals, repairs, and free workshops."
   location: "Logan Square"
+  address: "2844 W Armitage Ave, Chicago, IL 60647"
+  lat: 41.91777
+  lng: -87.69901
   url: "https://doddcamera.com/"
   friends: false
   type: shop
@@ -451,6 +604,9 @@
 - name: "Summertime Japanese Restaurant"
   description: "Authentic izakaya-style cuisine with private karaoke rooms and live entertainment. Fresh sashimi, grilled skewers, ramen, and traditional small plates."
   location: "Mount Prospect"
+  address: "1132 S Elmhurst Rd, Mount Prospect, IL 60056"
+  lat: 42.05340
+  lng: -87.93920
   url: "https://www.summertimejapaneserestaurant.com"
   friends: false
   type: restaurant
@@ -460,6 +616,9 @@
 - name: "Kasia's Deli"
   description: "Ukrainian Village tradition since 1982. Award-winning pierogi named 'Chicago's Best' every year since 1999. Featured in '1,000 Foods to Eat Before You Die.'"
   location: "Ukrainian Village"
+  address: "2101 W Chicago Ave, Chicago, IL 60622"
+  lat: 41.89560
+  lng: -87.67930
   url: "https://www.kasiasdeli.com/"
   friends: false
   type: restaurant
@@ -469,6 +628,9 @@
 - name: "Life on Marz Community Club"
   description: "Brewery taproom and cafe since 2021 inspired by Eastern European workers' clubs. Marz beers, nitro coffee, CBD seltzers, sausages from Makowski's. Dog-friendly."
   location: "Logan Square"
+  address: "1950 N Western Ave, Chicago, IL 60647"
+  lat: 41.91670
+  lng: -87.68760
   url: "https://www.lifeonmarz.club/"
   friends: true
   type: bar
@@ -477,6 +639,9 @@
 - name: "Rainbo Club"
   description: "Iconic dive bar since 1936. Former burlesque stage, featured in High Fidelity and on Liz Phair's Exile in Guyville cover. Open 365 days, 4pm-2am."
   location: "Wicker Park"
+  address: "1150 N Damen Ave, Chicago, IL 60622"
+  lat: 41.90281
+  lng: -87.67738
   url: ""
   friends: false
   type: bar
@@ -485,6 +650,9 @@
 - name: "Sportsman's Club"
   description: "Neighborhood tavern since 2013 in original 1900s Polish immigrant bar. Spirit-forward cocktails that change daily, Art Deco bar, taxidermy, amaro machine."
   location: "Ukrainian Village"
+  address: "948 N Western Ave, Chicago, IL 60622"
+  lat: 41.89870
+  lng: -87.68750
   url: "https://drinkingandgathering.com/"
   friends: false
   type: bar
@@ -493,6 +661,9 @@
 - name: "Cafe Tola"
   description: "Chicago-born, Latina-owned cafe since 2014. Specializing in crispy hand-rolled empanadas and signature horchata lattes. Four Chicago locations."
   location: "Lakeview"
+  address: "3612 N Southport Ave, Chicago, IL 60613"
+  lat: 41.94620
+  lng: -87.66370
   url: "http://www.cafetola.com/"
   friends: false
   type: cafe
@@ -501,6 +672,9 @@
 - name: "Bingo Tea"
   description: "Bubble tea shop in Chinatown since 2018. Fresh fruit teas, yogurt drinks, classic milk teas. Famous for pistachio milk tea and jujube tea."
   location: "Chinatown"
+  address: "2150 S Archer Ave, Chicago, IL 60616"
+  lat: 41.85460
+  lng: -87.63210
   url: "https://bingo-tea.res-menu.com/"
   friends: false
   type: cafe
@@ -509,6 +683,9 @@
 - name: "Mildblend Supply Co"
   description: "Menswear boutique since 2011. Specializes in raw and dry denim, American-made boots. Free hemming with denim purchases, chain stitch hemming available."
   location: "Wicker Park"
+  address: "1342 N Milwaukee Ave, Chicago, IL 60622"
+  lat: 41.90680
+  lng: -87.67620
   url: ""
   friends: true
   type: shop
@@ -518,6 +695,9 @@
 - name: "Lab Rabbit Optics"
   description: "Luxury eyewear shop since 2010. Named 'Best Eyewear Shop in Chicago' by Chicago Reader. 400+ handmade frames, in-house lens cutting. By appointment."
   location: "Ukrainian Village"
+  address: "1104 N Ashland Ave, Chicago, IL 60622"
+  lat: 41.90250
+  lng: -87.66720
   url: "https://www.labrabbit.com"
   friends: true
   type: shop
@@ -527,6 +707,9 @@
 - name: "Lula Cafe"
   description: "Inventive farm-to-table restaurant since 1999 by Jason Hammel. Three-time James Beard nominee. Famous for brunch (no reservations), Monday farm dinners $38. Spans three storefronts."
   location: "Logan Square"
+  address: "2537 N Kedzie Blvd, Chicago, IL 60647"
+  lat: 41.92762
+  lng: -87.70685
   url: "https://www.lulacafe.com/"
   friends: false
   type: restaurant
@@ -536,6 +719,9 @@
 - name: "The Gage"
   description: "Gastropub since 2007, flagship of Gage Hospitality Group. Michelin Plate 2022, OpenTable Top 100 Restaurant in America. Across from Millennium Park. Vintage atmosphere inspired by Irish pubs."
   location: "Theater District"
+  address: "24 S Michigan Ave, Chicago, IL 60603"
+  lat: 41.87898
+  lng: -87.62510
   url: "https://thegagechicago.com/"
   friends: false
   type: restaurant
@@ -545,6 +731,9 @@
 - name: "Ethiopian Diamond Restaurant & Bar"
   description: "Oldest Ethiopian restaurant in Chicago since 1996. Two locations, Edgewater is the original. Famous for smoky 'Diamond berbere' sauce, beef tartar, and shimbra asa."
   location: "Edgewater"
+  address: "6120 N Broadway St, Chicago, IL 60660"
+  lat: 41.99104
+  lng: -87.66016
   url: "https://ethiopiandiamondrestaurants.com/"
   friends: false
   type: restaurant
@@ -554,6 +743,9 @@
 - name: "Taste of Lebanon"
   description: "Family-owned Lebanese street food since 1996 by Ali Faraj. Cash-only takeout spot famous for falafel, shawarma, and lamb kofta wraps. Many vegan/vegetarian options."
   location: "Andersonville"
+  address: "1509 W Foster Ave, Chicago, IL 60640"
+  lat: 41.97600
+  lng: -87.66900
   url: "https://taste-of-lebanon.res-menu.com/"
   friends: false
   type: restaurant
@@ -563,6 +755,9 @@
 - name: "Al Bawadi Grill"
   description: "Premier Middle Eastern and Palestinian restaurant since 2008. Everything made from scratch including hand-formed kebabs on steel skewers. 50+ meza items. Zabiha Halal certified."
   location: "Bridgeview"
+  address: "7216 W 87th St, Bridgeview, IL 60455"
+  lat: 41.73378
+  lng: -87.80120
   url: "https://albawadigrill.com/"
   friends: false
   type: restaurant
@@ -572,6 +767,9 @@
 - name: "Chicago Symphony Orchestra"
   description: "One of America's 'Big Five' orchestras since 1891. 65 Grammy Awards. Based at Symphony Center, summer season at Ravinia Festival. 150+ concerts per year."
   location: "Grant Park"
+  address: "220 S Michigan Ave, Chicago, IL 60604"
+  lat: 41.87898
+  lng: -87.62510
   url: "https://cso.org/"
   friends: false
   type: venue
@@ -580,6 +778,9 @@
 - name: "Empty Bottle"
   description: "Iconic music venue since 1992. Named one of 'Best Rock Clubs in America' by Rolling Stone. 400-capacity space hosting indie, punk, experimental, jazz. Open 7 nights a week."
   location: "Ukrainian Village"
+  address: "1035 N Western Ave, Chicago, IL 60622"
+  lat: 41.90043
+  lng: -87.68667
   url: "https://www.emptybottle.com/"
   friends: false
   type: venue
@@ -588,6 +789,9 @@
 - name: "Black Dog Gelato"
   description: "Artisanal gelato and sorbet since 2007 by former Scylla pastry chef Jessica Oloroso. Chicago-style Northern gelato made fresh daily with local dairy, seasonal produce, high-quality chocolate."
   location: "Ukrainian Village"
+  address: "859 N Damen Ave, Chicago, IL 60622"
+  lat: 41.89763
+  lng: -87.67698
   url: "https://blackdoggelato.com/"
   friends: false
   type: dessert
@@ -596,6 +800,9 @@
 - name: "Kumiko"
   description: "Japanese dining bar by Julia Momosé. Four consecutive years named Best Bar in Midwest USA. World's 50 Best Bars. Seasonal tasting menu with cocktail, sake, or spirit-free pairings."
   location: "West Loop"
+  address: "630 W Lake St, Chicago, IL 60661"
+  lat: 41.88586
+  lng: -87.64406
   url: "https://barkumiko.com/"
   friends: false
   type: bar
@@ -604,6 +811,9 @@
 - name: "Cho Sun Ok"
   description: "Authentic Korean BBQ and traditional cuisine since 1980. Michelin-recommended. Famous for tabletop bulgogi, naengmyeon cold buckwheat noodles, and japchae. Chicago Reader favorite 2015. BYOB."
   location: "Lincoln Square"
+  address: "4200 N Lincoln Ave, Chicago, IL 60618"
+  lat: 41.95730
+  lng: -87.67750
   url: "http://chosunokrestaurant.com/"
   friends: true
   type: restaurant
