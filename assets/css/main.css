@@ -1,4 +1,4 @@
-/* ABOUTME: Main CSS file for the Japan Guide site using Tailwind and custom styles */
+/* ABOUTME: Main CSS file for the Chicago Guide site using Tailwind and custom styles */
 /* ABOUTME: Processed through Hugo's asset pipeline for optimization and fingerprinting */
 
 .prose img {
@@ -55,7 +55,7 @@ a[href*="goo.gl/maps"]::after {
     content: " 🗺️";
 }
 
-a[href*="tabelog.com"]::after {
+a[href*="yelp.com"]::after {
     content: " 🍴";
 }
 
@@ -74,9 +74,9 @@ a[href*="youtu.be"]::after {
 
 a[href*="timeout.com"]::after,
 a[href*="culturetrip.com"]::after,
-a[href*="trulyTokyo.com"]::after,
-a[href*="goTokyo.org"]::after,
-a[href*="japanlivingguide.com"]::after {
+a[href*="choosechicago.com"]::after,
+a[href*="chicagomag.com"]::after,
+a[href*="chicago.eater.com"]::after {
     content: " 🧭";
 }
 
