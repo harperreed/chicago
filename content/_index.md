@@ -4,6 +4,8 @@ I have lived in Chicago for 25 years (or more) and everytime someone is like "I 
 
 Let me know if you have additions or suggestions. As with everything on the internet, YMMV.
 
+Places denoted with a ⭐ are friends
+
 -[harper](mailto:harper@modest.com)
 
 ## Some favorite spots and such
