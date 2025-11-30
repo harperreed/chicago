@@ -18,7 +18,7 @@
     <strong>Jump to:</strong>
     {{ range $index, $type := $types }}
         {{ if gt $index 0 }} • {{ end }}
-        <a href="#{{ $type }}">{{ $type | title }}{{ if or (eq $type "bakery") (eq $type "gallery") }}ies{{ else }}s{{ end }}</a>
+        <a href="#{{ $type }}">{{ if eq $type "bakery" }}Bakeries{{ else if eq $type "gallery" }}Galleries{{ else }}{{ $type | title }}s{{ end }}</a>
     {{ end }}
 </nav>
 
@@ -35,7 +35,7 @@
     {{/* Handle type changes */}}
     {{ if ne $item.type $currentType }}
         {{ if ne $currentType "" }}</ul>{{ end }}
-        <h3 id="{{ $item.type }}">{{ $item.type | title }}{{ if eq $item.type "bakery" }}ies{{ else if eq $item.type "gallery" }}ies{{ else }}s{{ end }}</h3>
+        <h3 id="{{ $item.type }}">{{ if eq $item.type "bakery" }}Bakeries{{ else if eq $item.type "gallery" }}Galleries{{ else }}{{ $item.type | title }}s{{ end }}</h3>
         {{ $currentType = $item.type }}
         {{ $currentSubtype = "" }}
     {{ end }}
