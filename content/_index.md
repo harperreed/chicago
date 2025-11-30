@@ -8,6 +8,8 @@ Places denoted with a ⭐ are friends
 
 -[harper](mailto:harper@modest.com)
 
+**[View all spots on a map →](/map/)**
+
 ## Some favorite spots and such
 
 {{< favorites >}}
