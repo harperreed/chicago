@@ -1,0 +1,9 @@
+# ABOUTME: Netlify build configuration for Hugo site
+# ABOUTME: Specifies Hugo version and build settings for deployment
+
+[build]
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.147.4"

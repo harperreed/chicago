@@ -1,12 +1,12 @@
-baseURL = 'http://chicago.harperreed.com/'
+baseURL = 'https://chicago.harperreed.com/'
 languageCode = 'en-us'
 title = "Harper's Incomplete Chicago Guide"
-description = "Chicago!"
 
-disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = ["taxonomy", "RSS", "sitemap", "robotsTXT", "404"]
 
 
 [Params]
+description = "A curated guide to Chicago's best restaurants, bars, cafes, shops, and cultural spots from a 25-year local."
 email = 'harper@modest.com'
 name = 'Harper'
 twitter = 'harper'

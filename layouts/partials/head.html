@@ -7,7 +7,6 @@
     <title>{{ .Site.Title}}</title>
   
     <meta name="description" content="{{ .Site.Params.description }}">
-    <meta name="keywords" content="{{ .Site.Params.keywords }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}">
     <meta name="author" content="Harper Reed <{{ .Site.Params.email }}>">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
