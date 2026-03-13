@@ -6,7 +6,7 @@ disableKinds = ["taxonomy", "RSS", "sitemap", "robotsTXT", "404"]
 
 
 [Params]
-description = "A curated guide to Chicago's best restaurants, bars, cafes, shops, and cultural spots from a 25-year local."
+description = "Places I like in Chicago. I've been here 25+ years and still forget half of them when people ask."
 email = 'harper@modest.com'
 name = 'Harper'
 twitter = 'harper'
