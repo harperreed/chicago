@@ -13,9 +13,16 @@
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:image" content="{{ $baseURL }}/og.jpg">
+<meta property="og:video" content="{{ $baseURL }}/og.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
 
 <!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="player">
+<meta name="twitter:player" content="{{ $baseURL }}/og.mp4">
+<meta name="twitter:player:width" content="1280">
+<meta name="twitter:player:height" content="720">
 <meta property="twitter:domain" content="chicago.harperreed.com">
 <meta property="twitter:url" content="{{ $baseURL }}">
 <meta name="twitter:title" content="{{ $title }}">
