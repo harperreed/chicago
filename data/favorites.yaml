@@ -282,18 +282,6 @@
   type: museum
   keywords: art museum, impressionism, world class, grant wood
 
-- name: "Bloom Plant Based Kitchen"
-  description: "100% plant-based and gluten-free restaurant by James Beard nominee Chef Rodolfo Cuadros. Michelin Bib Gourmand awarded. Chef's Counter available."
-  location: "Wicker Park"
-  address: "1559 N Milwaukee Ave, Chicago, IL 60622"
-  lat: 41.90987
-  lng: -87.67645
-  url: "https://bloompb.com/"
-  friends: false
-  type: restaurant
-  subtype: vegetarian
-  keywords: vegan, plant-based, gluten-free, michelin, james beard
-
 - name: "Taqueria Chingón"
   description: "Mexico City-inspired taqueria in Fulton Market by Marcos Ascencio and Oliver Poilevey. Michelin Guide 2024. Signature al pastor and creative tacos."
   location: "Fulton Market"
@@ -819,3 +807,72 @@
   type: restaurant
   subtype: korean
   keywords: korean, bbq, bulgogi, naengmyeon, byob, michelin
+
+- name: "Bird Bird"
+  description: "Weekend bakery and cafe next door to Noodlebird by the same team. Portuguese egg tarts, ube sticky buns, and a signature breakfast sandwich. No fluff, just good stuff."
+  location: "Logan Square"
+  address: "2951 W Diversey Ave, Chicago, IL 60647"
+  lat: 41.93181
+  lng: -87.70090
+  url: "https://www.noodlebird.com/birdbird"
+  friends: true
+  type: bakery
+  keywords: bakery, pastries, egg tarts, breakfast, weekend brunch
+
+- name: "Omakase Room by Kanemaru"
+  description: "Traditional edomae sushi by Chef Shinichiro Kanemaru, a 30-year veteran who spent 17 years at Tokyo's legendary Ginza Kyubey. Intimate 10-seat counter, 16-course omakase. No frills, just impeccable technique."
+  location: "River North"
+  address: "40 W Hubbard St, Chicago, IL 60654"
+  lat: 41.89010
+  lng: -87.63150
+  url: "https://www.omakaseroom.com/chicago-experience/"
+  friends: false
+  type: restaurant
+  subtype: japanese
+  keywords: sushi, omakase, edomae, japanese, river north
+
+- name: "Mariscos San Pedro"
+  description: "Mexican seafood in the iconic former Dusek's space at Thalia Hall by the James Beard-nominated team behind Taqueria Chingón. Named for the San Pedro fish (John Dory). Costa Y Brasa 14-course chef counter on weekends."
+  location: "Pilsen"
+  address: "1227 W 18th St, Chicago, IL 60608"
+  lat: 41.85783
+  lng: -87.65751
+  url: "https://www.mariscossanpedro.com/"
+  friends: false
+  type: restaurant
+  subtype: mexican
+  keywords: seafood, mexican, pilsen, thalia hall, woodfire, chef counter
+
+- name: "Garfield Park Conservatory"
+  description: "One of the largest conservatories in the nation, 'landscape art under glass' since 1908. Designed by Jens Jensen. Eight indoor gardens spanning 12 acres with palms, ferns, cacti, koi ponds, and turtles. Free admission."
+  location: "East Garfield Park"
+  address: "300 N Central Park Ave, Chicago, IL 60624"
+  lat: 41.88630
+  lng: -87.71720
+  url: "https://garfieldconservatory.org/"
+  friends: false
+  type: attraction
+  keywords: conservatory, botanical garden, plants, free, jens jensen
+
+- name: "Small Cheval"
+  description: "Little sibling of Au Cheval serving the same legendary cheeseburgers at a fraction of the wait. Dijonnaise, pickles, and perfectly smashed patties. Multiple locations across Chicago."
+  location: "Wicker Park"
+  address: "1732 N Milwaukee Ave, Chicago, IL 60647"
+  lat: 41.91290
+  lng: -87.67430
+  url: "https://smallcheval.com"
+  friends: false
+  type: restaurant
+  subtype: american
+  keywords: burgers, cheeseburgers, fried chicken, au cheval
+
+- name: "Muse Coffee Studio"
+  description: "Coffee studio combining specialty coffee, photography, and community. Curated art on the walls, book club, and collaborations with local businesses like Justice of the Pies."
+  location: "Pilsen"
+  address: "747 S Western Ave, Chicago, IL 60612"
+  lat: 41.87180
+  lng: -87.68560
+  url: "https://www.musecoffeestudio.com/"
+  friends: false
+  type: cafe
+  keywords: coffee, specialty coffee, art, community, pilsen
