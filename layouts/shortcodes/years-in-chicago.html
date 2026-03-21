@@ -1,0 +1,9 @@
+{{/* ABOUTME: Calculates years lived in Chicago since June 2001 */}}
+{{/* ABOUTME: Usage: {{< years-in-chicago >}} - outputs the number of years */}}
+{{- $start := time "2001-06-01" -}}
+{{- $now := now -}}
+{{- $years := sub $now.Year $start.Year -}}
+{{- if lt $now.YearDay $start.YearDay -}}
+  {{- $years = sub $years 1 -}}
+{{- end -}}
+{{- $years -}}

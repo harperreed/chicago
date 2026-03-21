@@ -1,6 +1,6 @@
 # Harper's Chicago thoughts and guide
 
-I have lived in Chicago for 25 years (or more) and every time someone is like "I am in Chicago where should I go??" I always fail to recommend good spots. So here is my running list of spots.
+I have lived in Chicago for {{< years-in-chicago >}} years and every time someone is like "I am in Chicago where should I go??" I always fail to recommend good spots. So here is my running list of spots.
 
 Let me know if you have additions or suggestions. As with everything on the internet, YMMV.
 
