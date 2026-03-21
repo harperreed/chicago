@@ -2,7 +2,7 @@
 # ABOUTME: Specifies Hugo version and build settings for deployment
 
 [build]
-  command = "hugo --minify"
+  command = "npm install && npx tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind-output.css --minify && hugo --minify"
   publish = "public"
 
 [build.environment]
@@ -15,7 +15,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://unpkg.com https://tinylytics.app; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' https://*.tile.openstreetmap.org data:; connect-src 'self' https://tinylytics.app; font-src 'self'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://tinylytics.app; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' https://*.tile.openstreetmap.org data:; connect-src 'self' https://tinylytics.app; font-src 'self'"
 
 # Long-lived cache for fingerprinted assets
 [[headers]]
