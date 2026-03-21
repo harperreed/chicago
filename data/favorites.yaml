@@ -2,7 +2,7 @@
 # ABOUTME: Just the basic list data that gets dumped out by the favorites shortcode
 
 - name: "Noodlebird"
-  description: "A really wonderful macanese restaruant. Super tasty. "
+  description: "A really wonderful Macanese restaurant. Super tasty."
   location: "Logan Square"
   address: "2957 W Diversey Ave, Chicago, IL 60647"
   lat: 41.93181
