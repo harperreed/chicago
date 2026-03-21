@@ -1,6 +1,10 @@
 /* ABOUTME: Main CSS file for the Chicago Guide site using Tailwind and custom styles */
 /* ABOUTME: Processed through Hugo's asset pipeline for optimization and fingerprinting */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .prose img {
     padding: 0px;
     margin: 0px;

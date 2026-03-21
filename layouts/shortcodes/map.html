@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     places.forEach(function(place) {
         var icon = createIcon(place.type, place.friends, place.name);
-        var marker = L.marker([place.lat, place.lng], { icon: icon }).addTo(map);
+        var marker = L.marker([place.lat, place.lng], { icon: icon, title: place.name, alt: place.name }).addTo(map);
 
         var popupContent = '<strong>' + place.name + (place.friends ? ' ⭐' : '') + '</strong><br>';
         popupContent += place.description + '<br>';

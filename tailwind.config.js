@@ -1,5 +1,5 @@
 // ABOUTME: Tailwind CSS v3 configuration for Hugo site
-// ABOUTME: Scans layouts and content for class usage, includes typography/forms/aspect-ratio plugins
+// ABOUTME: Scans layouts and content for class usage, includes typography plugin
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,7 +9,5 @@ module.exports = {
   ],
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
   ],
 }

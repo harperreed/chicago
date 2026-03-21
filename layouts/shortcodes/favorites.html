@@ -14,7 +14,7 @@
 {{ $types = sort $types }}
 
 {{/* Generate jump menu */}}
-<nav aria-label="Category navigation" style="margin-bottom: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 4px;">
+<nav aria-label="Category navigation" class="mb-8 p-4 bg-gray-100 rounded sticky top-0 z-10">
     <strong>Jump to:</strong>
     {{ range $index, $type := $types }}
         {{ if gt $index 0 }} • {{ end }}
@@ -67,7 +67,7 @@
     {{ if $item.keywords }}data-keywords="{{ $item.keywords }}"{{ end }}
     {{ if $item.url }}data-url="{{ $item.url }}"{{ end }}
 >
-    <strong>{{ $item.name }}{{ if $item.japanese }} （{{ $item.japanese }}）{{ end }}{{ if $item.friends }} ⭐{{ end }}</strong> - {{ $item.description }}{{ if $item.location }} - {{ $item.location }}{{ end }}{{ if $item.url }} - <a href="{{ $item.url }}">{{ $item.name }}</a>{{ end }}
+    <strong>{{ $item.name }}{{ if $item.japanese }} （{{ $item.japanese }}）{{ end }}{{ if $item.friends }} ⭐{{ end }}</strong> — {{ $item.description }}{{ if $item.location }} — {{ $item.location }}{{ end }}{{ if $item.url }} — <a href="{{ $item.url }}" target="_blank" rel="noopener noreferrer">{{ $item.name }}</a>{{ end }}
 </li>
 {{ end }}
 </ul>
