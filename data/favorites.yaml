@@ -295,7 +295,7 @@
   keywords: tacos, mexican, al pastor, michelin, street food
 
 - name: "Lao Peng You"
-  description: "Northern Chinese restaurant by brothers Eric and Daniel Wat. Handmade dumplings and noodles daily. 'Old friend' in Chinese. BYOB, first come first serve."
+  description: "Northern Chinese restaurant by brothers Eric and Daniel Wat. Handmade dumplings and noodles daily. 'Old friend' in Chinese. BYOB, first-come, first-served."
   location: "Ukrainian Village"
   address: "2020 W Chicago Ave, Chicago, IL 60622"
   lat: 41.89608
@@ -741,7 +741,7 @@
   keywords: lebanese, middle eastern, falafel, shawarma, cash only
 
 - name: "Al Bawadi Grill"
-  description: "Premier Middle Eastern and Palestinian restaurant since 2008. Everything made from scratch including hand-formed kebabs on steel skewers. 50+ meza items. Zabiha Halal certified."
+  description: "Premier Middle Eastern and Palestinian restaurant since 2008. Everything made from scratch including hand-formed kebabs on steel skewers. 50+ mezze items. Zabiha Halal certified."
   location: "Bridgeview"
   address: "7216 W 87th St, Bridgeview, IL 60455"
   lat: 41.73378
@@ -750,7 +750,7 @@
   friends: false
   type: restaurant
   subtype: middle eastern
-  keywords: middle eastern, palestinian, halal, kebabs, meza
+  keywords: middle eastern, palestinian, halal, kebabs, mezze
 
 - name: "Chicago Symphony Orchestra"
   description: "One of America's 'Big Five' orchestras since 1891. 65 Grammy Awards. Based at Symphony Center, summer season at Ravinia Festival. 150+ concerts per year."

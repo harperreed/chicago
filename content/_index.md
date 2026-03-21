@@ -18,4 +18,4 @@ Places denoted with a ⭐ are friends
 
 {{< friends-guides >}}
 
-### {{< thanks >}}
+{{< thanks >}}

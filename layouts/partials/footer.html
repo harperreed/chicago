@@ -2,7 +2,7 @@
 <footer class="mt-10">
     <hr>
     <p class="text-xs my-5 ">
-        <b>This is {{ .Site.Title }}. <button class="tinylytics_kudos"></button></b>
+        <b>This is {{ .Site.Title }}. <button class="tinylytics_kudos" aria-label="Give kudos"></button></b>
     </p>
     <p class="text-xs my-5 ">This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International
         License. You’re allowed to copy and redistribute the material in any medium or format, and to remix, transform,
@@ -13,7 +13,7 @@
         legally restrict others from doing anything the license permits. <a
             href="https://creativecommons.org/licenses/by-nc/4.0/">View the license</a></p>
 <p class="text-xs my-5"><span class="tinylytics_hits"></span> hits from the following countries: <span class="tinylytics_countries"></span></p>
-    <p class="text-xs mb-10">Last updated @ {{ now.Format "Jan 2, 2006" }} by {{ .Site.Params.Name }} &middot; Contact <a
+    <p class="text-xs mb-10">Last updated on {{ now.Format "Jan 2, 2006" }} by {{ .Site.Params.Name }} &middot; Contact <a
             href="mailto:{{.Site.Params.email}}" rel="me">{{ .Site.Params.email }}</a></p>
     
     <!--  &middot; Generated @ {{ now.Format "Jan 2, 2006" }} -->
