@@ -48,10 +48,11 @@
     <span>🎨 Gallery/Museum</span>
     <span>🎵 Venue</span>
     <span>🛒 Market</span>
+    <span>🏛️ Attraction</span>
     <span>⭐ = Friends</span>
 </div>
 
-<div id="map"></div>
+<div id="map" role="application" aria-label="Interactive map of recommended Chicago places"></div>
 
 <script>
 (function() {
@@ -72,21 +73,22 @@
         'gallery': '#1abc9c',
         'museum': '#1abc9c',
         'venue': '#e67e22',
-        'market': '#27ae60'
+        'market': '#27ae60',
+        'attraction': '#16a085'
     };
 
     function getColor(type) {
         return typeColors[type] || '#7f8c8d';
     }
 
-    function createIcon(type, isFriend) {
+    function createIcon(type, isFriend, name) {
         var color = getColor(type);
         var size = isFriend ? 12 : 10;
         var border = isFriend ? '3px solid gold' : '2px solid white';
 
         return L.divIcon({
             className: 'custom-marker',
-            html: '<div style="background-color: ' + color + '; width: ' + size + 'px; height: ' + size + 'px; border-radius: 50%; border: ' + border + '; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>',
+            html: '<div style="background-color: ' + color + '; width: ' + size + 'px; height: ' + size + 'px; border-radius: 50%; border: ' + border + '; box-shadow: 0 2px 4px rgba(0,0,0,0.3);" role="img" aria-label="' + name + '"></div>',
             iconSize: [size + 6, size + 6],
             iconAnchor: [(size + 6) / 2, (size + 6) / 2]
         });
@@ -95,7 +97,7 @@
     var places = {{ $.Site.Data.favorites | jsonify | safeJS }};
 
     places.forEach(function(place) {
-        var icon = createIcon(place.type, place.friends);
+        var icon = createIcon(place.type, place.friends, place.name);
         var marker = L.marker([place.lat, place.lng], { icon: icon }).addTo(map);
 
         var popupContent = '<strong>' + place.name + (place.friends ? ' ⭐' : '') + '</strong><br>';
@@ -112,7 +114,7 @@
         }
         popupContent += '</span>';
         if (place.url) {
-            popupContent += ' <a href="' + place.url + '" target="_blank">↗</a>';
+            popupContent += ' <a href="' + place.url + '" target="_blank" rel="noopener noreferrer">↗</a>';
         }
 
         marker.bindPopup(popupContent);
