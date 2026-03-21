@@ -67,7 +67,7 @@
     {{ if $item.keywords }}data-keywords="{{ $item.keywords }}"{{ end }}
     {{ if $item.url }}data-url="{{ $item.url }}"{{ end }}
 >
-    <strong>{{ $item.name }}{{ if $item.japanese }} （{{ $item.japanese }}）{{ end }}{{ if $item.friends }} ⭐{{ end }}</strong> - {{ $item.description }}{{ if $item.location }} - {{ $item.location }}{{ end }}{{ if $item.url }} - <a href="{{ $item.url }}">link</a>{{ end }}
+    <strong>{{ $item.name }}{{ if $item.japanese }} （{{ $item.japanese }}）{{ end }}{{ if $item.friends }} ⭐{{ end }}</strong> - {{ $item.description }}{{ if $item.location }} - {{ $item.location }}{{ end }}{{ if $item.url }} - <a href="{{ $item.url }}">{{ $item.name }}</a>{{ end }}
 </li>
 {{ end }}
 </ul>
