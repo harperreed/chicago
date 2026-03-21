@@ -2,7 +2,7 @@ baseURL = 'https://chicago.harperreed.com/'
 languageCode = 'en-us'
 title = "Harper's Incomplete Chicago Guide"
 
-disableKinds = ["taxonomy", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = ["taxonomy", "RSS", "sitemap", "robotsTXT"]
 
 
 [Params]
