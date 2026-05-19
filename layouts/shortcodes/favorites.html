@@ -14,11 +14,11 @@
 {{ $types = sort $types }}
 
 {{/* Generate jump menu */}}
-<nav aria-label="Category navigation" class="mb-8 p-4 bg-gray-100 rounded sticky top-0 z-10">
+<nav aria-label="Category navigation" class="mb-8 p-3 sm:p-4 bg-gray-100 rounded sticky top-0 z-10 overflow-x-auto whitespace-nowrap -webkit-overflow-scrolling-touch">
     <strong>Jump to:</strong>
     {{ range $index, $type := $types }}
         {{ if gt $index 0 }} • {{ end }}
-        <a href="#{{ $type }}">{{ if eq $type "bakery" }}Bakeries{{ else if eq $type "gallery" }}Galleries{{ else }}{{ $type | title }}s{{ end }}</a>
+        <a href="#{{ $type }}" class="inline-block py-1 px-1">{{ if eq $type "bakery" }}Bakeries{{ else if eq $type "gallery" }}Galleries{{ else }}{{ $type | title }}s{{ end }}</a>
     {{ end }}
 </nav>
 

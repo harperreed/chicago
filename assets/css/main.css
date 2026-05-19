@@ -32,12 +32,21 @@ figure img {
     /*border-radius: 0.5rem;*/
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
     figure img {
-        padding: 0px;
+        padding: 0.25rem;
         /*border-radius: 0.25rem;*/
         /*border: 1px solid #374151;*/
     }
+}
+
+.prose li {
+    padding: 0.25rem 0;
+}
+
+.prose li a {
+    padding: 0.25rem 0;
+    display: inline-block;
 }
 
 figcaption,
