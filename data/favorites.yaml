@@ -843,6 +843,17 @@
   subtype: mexican
   keywords: seafood, mexican, pilsen, thalia hall, woodfire, chef counter
 
+- name: "Chicago Architecture Center River Cruise"
+  description: "The best boat tour in the city. Docent-led cruise down the Chicago River covering 50+ buildings across architectural styles from Art Deco to modern glass towers. Buy tickets in advance — it sells out."
+  location: "Riverwalk"
+  address: "112 E Wacker Dr, Chicago, IL 60601"
+  lat: 41.88690
+  lng: -87.62480
+  url: "https://www.architecture.org/tours/detail/chicago-architecture-foundation-center-river-cruise-aboard-chicago-s-first-lady/"
+  friends: false
+  type: attraction
+  keywords: architecture, boat tour, river cruise, CAF, chicago river, buildings, skyline
+
 - name: "Garfield Park Conservatory"
   description: "One of the largest conservatories in the nation, 'landscape art under glass' since 1908. Designed by Jens Jensen. Eight indoor gardens spanning 12 acres with palms, ferns, cacti, koi ponds, and turtles. Free admission."
   location: "East Garfield Park"
