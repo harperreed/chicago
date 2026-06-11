@@ -12,8 +12,7 @@ Source for [chicago.harperreed.com](https://chicago.harperreed.com/) — a singl
 
 ```sh
 npm install
-npm run css        # build Tailwind output once
-npm run dev        # hugo server at http://localhost:1313
+npm run dev        # builds Tailwind, then hugo server at http://localhost:1313
 ```
 
 Run `npm run css:watch` in a second terminal if you're editing Tailwind classes.

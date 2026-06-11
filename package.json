@@ -9,7 +9,7 @@
   "scripts": {
     "css": "tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind-output.css --minify",
     "css:watch": "tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind-output.css --watch",
-    "dev": "hugo server",
+    "dev": "npm run css && hugo server",
     "build": "npm run css && hugo --minify",
     "test": "bash tests/site-checks.sh"
   },

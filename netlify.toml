@@ -2,7 +2,7 @@
 # ABOUTME: Specifies Hugo version and build settings for deployment
 
 [build]
-  command = "npm install && npm run build"
+  command = "npm ci && npm run build"
   publish = "public"
 
 [build.environment]
