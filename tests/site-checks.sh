@@ -94,6 +94,19 @@ check "H1 matches site title" "index.html" 'id="harpers-incomplete-chicago-guide
 check "legend shows real marker dots" "index.html" "legend-dot"
 check "marker colors flow from categories data" "index.html" '"color":"#e74c3c"'
 
+# --- favorites list ---
+check "type headings use plural from categories data" "index.html" '<h3 id="restaurant">Restaurants</h3>'
+check "jump nav present" "index.html" 'aria-label="Category navigation"'
+LI_COUNT=$(grep -o 'data-name=' "$OUT/index.html" | wc -l | tr -d ' ')
+YAML_COUNT=$(grep -c '^- name:' data/favorites.yaml)
+if [ "$LI_COUNT" = "$YAML_COUNT" ]; then
+  echo "ok: all $YAML_COUNT favorites render as list items"
+  PASS=$((PASS + 1))
+else
+  echo "FAIL: favorites count mismatch (yaml=$YAML_COUNT html=$LI_COUNT)"
+  FAIL=$((FAIL + 1))
+fi
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]

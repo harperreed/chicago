@@ -1,9 +1,6 @@
 {{/* ABOUTME: Simple Hugo shortcode that outputs favorites list from data/favorites.yaml */}}
 {{/* ABOUTME: Usage: {{< favorites >}} - groups by type, then subtype for restaurants/shops */}}
 
-{{ $currentType := "" }}
-{{ $currentSubtype := "" }}
-
 {{/* First pass: collect all unique types for the menu */}}
 {{ $types := slice }}
 {{ range .Site.Data.favorites }}
@@ -13,12 +10,13 @@
 {{ end }}
 {{ $types = sort $types }}
 
-{{/* Generate jump menu */}}
+{{/* Generate jump menu (plural labels come from data/categories.yaml) */}}
 <nav aria-label="Category navigation" class="mb-8 p-3 sm:p-4 bg-gray-100 rounded sticky top-0 z-10 overflow-x-auto whitespace-nowrap -webkit-overflow-scrolling-touch">
     <strong>Jump to:</strong>
     {{ range $index, $type := $types }}
         {{ if gt $index 0 }} • {{ end }}
-        <a href="#{{ $type }}" class="inline-block py-1 px-1">{{ if eq $type "bakery" }}Bakeries{{ else if eq $type "gallery" }}Galleries{{ else }}{{ $type | title }}s{{ end }}</a>
+        {{ $cat := index site.Data.categories $type }}
+        <a href="#{{ $type }}" class="inline-block py-1 px-1">{{ if $cat }}{{ $cat.plural }}{{ else }}{{ $type | title }}s{{ end }}</a>
     {{ end }}
 </nav>
 
@@ -29,31 +27,32 @@
 {{ end }}
 {{ $sorted = sort $sorted "key" }}
 
+{{ $currentType := "" }}
+{{ $currentGroup := "__unset__" }}
+
 {{ range $sorted }}
     {{ $item := .item }}
 
     {{/* Handle type changes */}}
     {{ if ne $item.type $currentType }}
-        {{ if ne $currentType "" }}</ul>{{ end }}
-        <h3 id="{{ $item.type }}">{{ if eq $item.type "bakery" }}Bakeries{{ else if eq $item.type "gallery" }}Galleries{{ else }}{{ $item.type | title }}s{{ end }}</h3>
+        {{ if ne $currentGroup "__unset__" }}</ul>{{ end }}
+        {{ $cat := index site.Data.categories $item.type }}
+        <h3 id="{{ $item.type }}">{{ if $cat }}{{ $cat.plural }}{{ else }}{{ $item.type | title }}s{{ end }}</h3>
         {{ $currentType = $item.type }}
-        {{ $currentSubtype = "" }}
+        {{ $currentGroup = "__unset__" }}
     {{ end }}
 
-    {{/* Handle subtype changes for restaurant/shop */}}
-    {{ if and $item.subtype (in (slice "restaurant" "shop") $item.type) }}
-        {{ if ne $item.subtype $currentSubtype }}
-            {{ if ne $currentSubtype "" }}</ul>{{ end }}
-            <h4>{{ $item.subtype | humanize }}</h4>
-            <ul>
-            {{ $currentSubtype = $item.subtype }}
-        {{ end }}
-    {{ else }}
-        {{/* No subtype - start list if needed */}}
-        {{ if eq $currentSubtype "" }}
-            <ul>
-            {{ $currentSubtype = "none" }}
-        {{ end }}
+    {{/* Restaurants and shops group by subtype; a missing subtype lands in "Other" */}}
+    {{ $group := "" }}
+    {{ if in (slice "restaurant" "shop") $item.type }}
+        {{ $group = default "other" $item.subtype }}
+    {{ end }}
+
+    {{ if ne $group $currentGroup }}
+        {{ if ne $currentGroup "__unset__" }}</ul>{{ end }}
+        {{ if $group }}<h4>{{ $group | humanize }}</h4>{{ end }}
+        <ul>
+        {{ $currentGroup = $group }}
     {{ end }}
 
     {{/* Output the item */}}
