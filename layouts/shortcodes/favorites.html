@@ -15,7 +15,7 @@
     <strong>Jump to:</strong>
     {{ range $index, $type := $types }}
         {{ if gt $index 0 }} • {{ end }}
-        {{ $cat := index site.Data.categories $type }}
+        {{ $cat := index $.Site.Data.categories $type }}
         <a href="#{{ $type }}" class="inline-block py-1 px-1">{{ if $cat }}{{ $cat.plural }}{{ else }}{{ $type | title }}s{{ end }}</a>
     {{ end }}
 </nav>
@@ -36,7 +36,7 @@
     {{/* Handle type changes */}}
     {{ if ne $item.type $currentType }}
         {{ if ne $currentGroup "__unset__" }}</ul>{{ end }}
-        {{ $cat := index site.Data.categories $item.type }}
+        {{ $cat := index $.Site.Data.categories $item.type }}
         <h3 id="{{ $item.type }}">{{ if $cat }}{{ $cat.plural }}{{ else }}{{ $item.type | title }}s{{ end }}</h3>
         {{ $currentType = $item.type }}
         {{ $currentGroup = "__unset__" }}
