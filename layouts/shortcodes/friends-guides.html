@@ -1,13 +1,16 @@
-{{/* ABOUTME: Simple Hugo shortcode that outputs all friends' guides from data/friends-guides.yaml */}}
+{{/* ABOUTME: Simple Hugo shortcode that outputs all friends' guides from data/friends_guides.yaml */}}
 {{/* ABOUTME: Usage: {{< friends-guides >}} - just dumps out all the guides */}}
 
 <ul>
 {{- range .Site.Data.friends_guides -}}
   <li>
-    {{- if .twitter -}}<a href="{{ .twitter }}">{{ .name }}</a>{{- else -}}{{ .name }}{{- end -}}'s 
-    <a href="{{ .url }}">{{ .title }}</a>
-    {{- if .note -}} {{ .note }}{{- end -}}
-    {{- if .website -}} by <a href="{{ .website }}">{{ .name }}</a>{{- end -}}
+    {{- if .twitter -}}
+      <a href="{{ .twitter }}">{{ .name }}</a>&rsquo;s <a href="{{ .url }}">{{ .title }}</a>
+    {{- else -}}
+      <a href="{{ .url }}">{{ .name }}&rsquo;s {{ .title }}</a>
+    {{- end -}}
+    {{- with .note }} {{ . }}{{ end -}}
+    {{- if .website }} by <a href="{{ .website }}">{{ .name }}</a>{{ end -}}
   </li>
 {{- end -}}
 </ul>

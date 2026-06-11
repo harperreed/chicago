@@ -1,9 +1,6 @@
 {{/* ABOUTME: Simple Hugo shortcode that outputs favorites list from data/favorites.yaml */}}
 {{/* ABOUTME: Usage: {{< favorites >}} - groups by type, then subtype for restaurants/shops */}}
 
-{{ $currentType := "" }}
-{{ $currentSubtype := "" }}
-
 {{/* First pass: collect all unique types for the menu */}}
 {{ $types := slice }}
 {{ range .Site.Data.favorites }}
@@ -13,12 +10,19 @@
 {{ end }}
 {{ $types = sort $types }}
 
-{{/* Generate jump menu */}}
+{{/* Generate jump menu (plural labels come from data/categories.yaml) */}}
+<div class="mb-2">
+    <label for="favorites-filter" class="sr-only">Filter places</label>
+    <input type="search" id="favorites-filter" placeholder="Filter: tacos, Logan Square, cafe…" autocomplete="off"
+        class="w-full p-2 sm:p-3 border border-gray-300 rounded bg-white">
+    <p id="favorites-filter-count" class="text-sm text-gray-600 mt-1" aria-live="polite"></p>
+</div>
 <nav aria-label="Category navigation" class="mb-8 p-3 sm:p-4 bg-gray-100 rounded sticky top-0 z-10 overflow-x-auto whitespace-nowrap -webkit-overflow-scrolling-touch">
     <strong>Jump to:</strong>
     {{ range $index, $type := $types }}
         {{ if gt $index 0 }} • {{ end }}
-        <a href="#{{ $type }}" class="inline-block py-1 px-1">{{ if eq $type "bakery" }}Bakeries{{ else if eq $type "gallery" }}Galleries{{ else }}{{ $type | title }}s{{ end }}</a>
+        {{ $cat := index $.Site.Data.categories $type }}
+        <a href="#{{ $type }}" class="inline-block py-1 px-1">{{ if $cat }}{{ $cat.plural }}{{ else }}{{ $type | title }}s{{ end }}</a>
     {{ end }}
 </nav>
 
@@ -29,31 +33,32 @@
 {{ end }}
 {{ $sorted = sort $sorted "key" }}
 
+{{ $currentType := "" }}
+{{ $currentGroup := "__unset__" }}
+
 {{ range $sorted }}
     {{ $item := .item }}
 
     {{/* Handle type changes */}}
     {{ if ne $item.type $currentType }}
-        {{ if ne $currentType "" }}</ul>{{ end }}
-        <h3 id="{{ $item.type }}">{{ if eq $item.type "bakery" }}Bakeries{{ else if eq $item.type "gallery" }}Galleries{{ else }}{{ $item.type | title }}s{{ end }}</h3>
+        {{ if ne $currentGroup "__unset__" }}</ul>{{ end }}
+        {{ $cat := index $.Site.Data.categories $item.type }}
+        <h3 id="{{ $item.type }}">{{ if $cat }}{{ $cat.plural }}{{ else }}{{ $item.type | title }}s{{ end }}</h3>
         {{ $currentType = $item.type }}
-        {{ $currentSubtype = "" }}
+        {{ $currentGroup = "__unset__" }}
     {{ end }}
 
-    {{/* Handle subtype changes for restaurant/shop */}}
-    {{ if and $item.subtype (in (slice "restaurant" "shop") $item.type) }}
-        {{ if ne $item.subtype $currentSubtype }}
-            {{ if ne $currentSubtype "" }}</ul>{{ end }}
-            <h4>{{ $item.subtype | humanize }}</h4>
-            <ul>
-            {{ $currentSubtype = $item.subtype }}
-        {{ end }}
-    {{ else }}
-        {{/* No subtype - start list if needed */}}
-        {{ if eq $currentSubtype "" }}
-            <ul>
-            {{ $currentSubtype = "none" }}
-        {{ end }}
+    {{/* Restaurants and shops group by subtype; a missing subtype lands in "Other" */}}
+    {{ $group := "" }}
+    {{ if in (slice "restaurant" "shop") $item.type }}
+        {{ $group = default "other" $item.subtype }}
+    {{ end }}
+
+    {{ if ne $group $currentGroup }}
+        {{ if ne $currentGroup "__unset__" }}</ul>{{ end }}
+        {{ if $group }}<h4>{{ $group | humanize }}</h4>{{ end }}
+        <ul>
+        {{ $currentGroup = $group }}
     {{ end }}
 
     {{/* Output the item */}}
@@ -71,3 +76,70 @@
 </li>
 {{ end }}
 </ul>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var input = document.getElementById('favorites-filter');
+    if (!input) return;
+    var countEl = document.getElementById('favorites-filter-count');
+    var items = Array.prototype.slice.call(document.querySelectorAll('li[data-name]'));
+    if (items.length === 0) return;
+    var total = items.length;
+
+    // Build heading groups once: each h3/h4/ul owns the favorite <li>s that
+    // follow it (until the next heading), so empty sections can be hidden.
+    var container = items[0].parentNode.parentNode;
+    var groups = [];
+    var currentH3 = null;
+    var currentH4 = null;
+    Array.prototype.forEach.call(container.children, function(el) {
+        var tag = el.tagName;
+        if (tag === 'H1' || tag === 'H2') {
+            currentH3 = null;
+            currentH4 = null;
+        } else if (tag === 'H3') {
+            currentH3 = { el: el, items: [] };
+            currentH4 = null;
+            groups.push(currentH3);
+        } else if (tag === 'H4') {
+            currentH4 = { el: el, items: [] };
+            groups.push(currentH4);
+        } else if (tag === 'UL') {
+            var lis = el.querySelectorAll('li[data-name]');
+            if (lis.length === 0) return;
+            var group = { el: el, items: Array.prototype.slice.call(lis) };
+            groups.push(group);
+            if (currentH4) currentH4.items = currentH4.items.concat(group.items);
+            if (currentH3) currentH3.items = currentH3.items.concat(group.items);
+        }
+    });
+
+    function haystack(li) {
+        return [
+            li.getAttribute('data-name') || '',
+            li.getAttribute('data-japanese') || '',
+            li.getAttribute('data-type') || '',
+            li.getAttribute('data-subtype') || '',
+            li.getAttribute('data-location') || '',
+            li.getAttribute('data-keywords') || '',
+            li.textContent || ''
+        ].join(' ').toLowerCase();
+    }
+
+    function applyFilter() {
+        var q = input.value.trim().toLowerCase();
+        var shown = 0;
+        items.forEach(function(li) {
+            var visible = q === '' || haystack(li).indexOf(q) !== -1;
+            li.style.display = visible ? '' : 'none';
+            if (visible) shown += 1;
+        });
+        groups.forEach(function(group) {
+            var any = group.items.some(function(li) { return li.style.display !== 'none'; });
+            group.el.style.display = any ? '' : 'none';
+        });
+        countEl.textContent = q === '' ? '' : 'Showing ' + shown + ' of ' + total + ' places';
+    }
+
+    input.addEventListener('input', applyFilter);
+});
+</script>

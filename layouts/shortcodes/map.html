@@ -41,6 +41,18 @@
 .map-legend span {
     white-space: nowrap;
 }
+.map-legend .legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    vertical-align: middle;
+}
+.map-legend .legend-dot-friend {
+    border: 2px solid gold;
+}
 @media (max-width: 640px) {
     #map {
         height: 50vh;
@@ -50,17 +62,10 @@
 </style>
 
 <div class="map-legend">
-    <span>🔴 Restaurant</span>
-    <span>☕ Cafe</span>
-    <span>🍞 Bakery</span>
-    <span>🍨 Dessert</span>
-    <span>🍺 Bar</span>
-    <span>🛍️ Shop</span>
-    <span>🎨 Gallery/Museum</span>
-    <span>🎵 Venue</span>
-    <span>🛒 Market</span>
-    <span>🏛️ Attraction</span>
-    <span>⭐ = Friends</span>
+    {{ range $type, $cat := $.Site.Data.categories }}
+    <span><span class="legend-dot" style="background-color: {{ $cat.color }};"></span> {{ $cat.plural }}</span>
+    {{ end }}
+    <span><span class="legend-dot legend-dot-friend" style="background-color: #7f8c8d;"></span> Friends</span>
 </div>
 
 <div id="map" role="application" aria-label="Interactive map of recommended Chicago places"></div>
@@ -74,22 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    var typeColors = {
-        'restaurant': '#e74c3c',
-        'cafe': '#8b4513',
-        'bakery': '#d4a574',
-        'dessert': '#ff69b4',
-        'bar': '#9b59b6',
-        'shop': '#3498db',
-        'gallery': '#1abc9c',
-        'museum': '#1abc9c',
-        'venue': '#e67e22',
-        'market': '#27ae60',
-        'attraction': '#16a085'
-    };
+    var categories = {{ $.Site.Data.categories | jsonify | safeJS }};
 
     function getColor(type) {
-        return typeColors[type] || '#7f8c8d';
+        var cat = categories[type];
+        return cat ? cat.color : '#7f8c8d';
     }
 
     var isMobile = window.innerWidth <= 640;
