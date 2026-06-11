@@ -107,6 +107,9 @@ else
   FAIL=$((FAIL + 1))
 fi
 
+# --- friends guides ---
+check "friends guide link text is descriptive" "index.html" "Jordan Ho&rsquo;s Guide</a>"
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
