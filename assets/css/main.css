@@ -98,10 +98,6 @@ a[href*="robbreport.com"]::after {
     content: " 📰";
 }
 
-a[href*="shunkoin.com"]::after {
-    content: " ⛩️";
-}
-
 code[data-lang="prompt"],
 code[data-lang="text"] {
     text-wrap: wrap;
