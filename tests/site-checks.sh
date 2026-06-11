@@ -90,6 +90,10 @@ check "tinylytics kudos button hidden when empty" "css/bundle.*.css" "tinylytics
 # --- title consistency ---
 check "H1 matches site title" "index.html" 'id="harpers-incomplete-chicago-guide"'
 
+# --- category single source of truth ---
+check "legend shows real marker dots" "index.html" "legend-dot"
+check "marker colors flow from categories data" "index.html" '"color":"#e74c3c"'
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]

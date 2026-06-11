@@ -1,0 +1,14 @@
+# ABOUTME: Single source of truth for place categories: display plural + marker color.
+# ABOUTME: Used by the map legend, map marker colors, and favorites list headings.
+
+attraction: { plural: "Attractions", color: "#16a085" }
+bakery: { plural: "Bakeries", color: "#d4a574" }
+bar: { plural: "Bars", color: "#9b59b6" }
+cafe: { plural: "Cafes", color: "#8b4513" }
+dessert: { plural: "Desserts", color: "#ff69b4" }
+gallery: { plural: "Galleries", color: "#1abc9c" }
+market: { plural: "Markets", color: "#27ae60" }
+museum: { plural: "Museums", color: "#1abc9c" }
+restaurant: { plural: "Restaurants", color: "#e74c3c" }
+shop: { plural: "Shops", color: "#3498db" }
+venue: { plural: "Venues", color: "#e67e22" }
