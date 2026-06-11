@@ -2,7 +2,7 @@
 # ABOUTME: Build-verification tests for the Chicago guide site.
 # ABOUTME: Builds the site to a temp dir and asserts on the generated output.
 set -uo pipefail
-cd "$(dirname "$0")/.."
+cd "$(dirname "$0")/.." || { echo "FAIL: cannot cd to repo root"; exit 1; }
 
 OUT=$(mktemp -d)
 trap 'rm -rf "$OUT"' EXIT
@@ -23,8 +23,14 @@ FAIL=0
 # check <desc> <file-glob relative to OUT> <fixed-string>
 check() {
   local desc="$1" file="$2" pattern="$3"
-  # shellcheck disable=SC2086 # glob expansion is intentional
-  if cat $OUT/$file 2>/dev/null | grep -qF -- "$pattern"; then
+  # shellcheck disable=SC2206 # glob expansion is intentional
+  local files=($OUT/$file)
+  if [ ! -e "${files[0]}" ]; then
+    echo "FAIL: $desc (no files matched '$file')"
+    FAIL=$((FAIL + 1))
+    return
+  fi
+  if cat "${files[@]}" | grep -qF -- "$pattern"; then
     echo "ok: $desc"
     PASS=$((PASS + 1))
   else
@@ -36,8 +42,14 @@ check() {
 # check_re <desc> <file-glob relative to OUT> <extended-regex>
 check_re() {
   local desc="$1" file="$2" pattern="$3"
-  # shellcheck disable=SC2086
-  if cat $OUT/$file 2>/dev/null | grep -qE -- "$pattern"; then
+  # shellcheck disable=SC2206 # glob expansion is intentional
+  local files=($OUT/$file)
+  if [ ! -e "${files[0]}" ]; then
+    echo "FAIL: $desc (no files matched '$file')"
+    FAIL=$((FAIL + 1))
+    return
+  fi
+  if cat "${files[@]}" | grep -qE -- "$pattern"; then
     echo "ok: $desc"
     PASS=$((PASS + 1))
   else
