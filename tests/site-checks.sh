@@ -80,6 +80,9 @@ check_re "robots.txt allows all crawlers" "robots.txt" "^Disallow: *$"
 check "robots.txt references sitemap" "robots.txt" "Sitemap: https://chicago.harperreed.com/sitemap.xml"
 check_file "sitemap generated" "sitemap.xml"
 
+# --- sticky nav / scrolling ---
+check "anchored headings clear sticky nav" "css/bundle.*.css" "scroll-margin-top"
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
