@@ -85,6 +85,7 @@ check "anchored headings clear sticky nav" "css/bundle.*.css" "scroll-margin-top
 
 # --- tinylytics graceful degradation ---
 check "tinylytics line hidden when empty" "css/bundle.*.css" ":has(.tinylytics_hits:empty)"
+check "tinylytics kudos button hidden when empty" "css/bundle.*.css" "tinylytics_kudos:empty"
 
 echo ""
 echo "$PASS passed, $FAIL failed"
