@@ -1,5 +1,5 @@
 # ABOUTME: Monthly link-rot check over the guide's data and content files.
-# ABOUTME: Opens a GitHub issue when lychee finds dead links.
+# ABOUTME: Opens or updates a GitHub issue when lychee finds dead links.
 
 name: Link Check
 
@@ -24,10 +24,27 @@ jobs:
           output: ./lychee/out.md
           fail: false
 
-      - name: Open issue on dead links
+      # --force makes this a no-op update when the label already exists
+      - name: Ensure link-rot label exists
+        if: steps.lychee.outputs.exit_code != 0
+        run: gh label create link-rot --color "e4e669" --description "Detected dead links" --force
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Find existing link-rot issue
+        if: steps.lychee.outputs.exit_code != 0
+        id: find-issue
+        run: |
+          issue=$(gh issue list --label link-rot --state open --json number --jq '.[0].number // ""')
+          echo "number=$issue" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Open or update issue on dead links
         if: steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@v5
         with:
           title: "Link check: dead links found"
           content-filepath: ./lychee/out.md
           labels: link-rot
+          issue-number: ${{ steps.find-issue.outputs.number }}
