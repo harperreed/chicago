@@ -12,7 +12,8 @@ if [ ! -f assets/css/tailwind-output.css ]; then
   npx tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind-output.css --minify
 fi
 
-if ! hugo --quiet --destination "$OUT"; then
+# Isolate hugo's caches per run so concurrent builds can't race each other.
+if ! HUGO_CACHEDIR="$OUT/hugo-cache" HUGO_RESOURCEDIR="$OUT/hugo-resources" hugo --quiet --destination "$OUT"; then
   echo "FAIL: hugo build failed"
   exit 1
 fi
@@ -30,7 +31,7 @@ check() {
     FAIL=$((FAIL + 1))
     return
   fi
-  if cat "${files[@]}" | grep -qF -- "$pattern"; then
+  if grep -qF -- "$pattern" "${files[@]}"; then
     echo "ok: $desc"
     PASS=$((PASS + 1))
   else
@@ -49,7 +50,7 @@ check_re() {
     FAIL=$((FAIL + 1))
     return
   fi
-  if cat "${files[@]}" | grep -qE -- "$pattern"; then
+  if grep -qE -- "$pattern" "${files[@]}"; then
     echo "ok: $desc"
     PASS=$((PASS + 1))
   else
