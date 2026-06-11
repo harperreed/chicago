@@ -87,6 +87,9 @@ check "anchored headings clear sticky nav" "css/bundle.*.css" "scroll-margin-top
 check "tinylytics line hidden when empty" "css/bundle.*.css" ":has(.tinylytics_hits:empty)"
 check "tinylytics kudos button hidden when empty" "css/bundle.*.css" "tinylytics_kudos:empty"
 
+# --- title consistency ---
+check "H1 matches site title" "index.html" 'id="harpers-incomplete-chicago-guide"'
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
