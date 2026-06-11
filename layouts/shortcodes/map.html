@@ -48,6 +48,7 @@
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    vertical-align: middle;
 }
 .map-legend .legend-dot-friend {
     border: 2px solid gold;
@@ -64,7 +65,7 @@
     {{ range $type, $cat := $.Site.Data.categories }}
     <span><span class="legend-dot" style="background-color: {{ $cat.color }};"></span> {{ $cat.plural }}</span>
     {{ end }}
-    <span><span class="legend-dot legend-dot-friend" style="background-color: #7f8c8d;"></span> = Friends</span>
+    <span><span class="legend-dot legend-dot-friend" style="background-color: #7f8c8d;"></span> Friends</span>
 </div>
 
 <div id="map" role="application" aria-label="Interactive map of recommended Chicago places"></div>
