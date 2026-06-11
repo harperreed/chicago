@@ -113,6 +113,10 @@ check "friends guide link text is descriptive" "index.html" "Jordan Ho&rsquo;s G
 # --- 404 ---
 check "404 links back home" "404.html" 'href="/">Escape back to the guide'
 
+# --- filter ---
+check "filter input present" "index.html" 'id="favorites-filter"'
+check "filter count live region" "index.html" 'id="favorites-filter-count"'
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
