@@ -83,6 +83,9 @@ check_file "sitemap generated" "sitemap.xml"
 # --- sticky nav / scrolling ---
 check "anchored headings clear sticky nav" "css/bundle.*.css" "scroll-margin-top"
 
+# --- tinylytics graceful degradation ---
+check "tinylytics line hidden when empty" "css/bundle.*.css" ":has(.tinylytics_hits:empty)"
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
