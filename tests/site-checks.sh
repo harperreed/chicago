@@ -110,6 +110,9 @@ fi
 # --- friends guides ---
 check "friends guide link text is descriptive" "index.html" "Jordan Ho&rsquo;s Guide</a>"
 
+# --- 404 ---
+check "404 links back home" "404.html" 'href="/">Escape back to the guide'
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
