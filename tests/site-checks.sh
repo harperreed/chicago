@@ -74,6 +74,11 @@ check_file() {
 check_file "homepage builds" "index.html"
 check "site title present" "index.html" "Harper&#39;s Incomplete Chicago Guide"
 
+# --- robots + sitemap ---
+check_re "robots.txt allows all crawlers" "robots.txt" "^Disallow: *$"
+check "robots.txt references sitemap" "robots.txt" "Sitemap: https://chicago.harperreed.com/sitemap.xml"
+check_file "sitemap generated" "sitemap.xml"
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
