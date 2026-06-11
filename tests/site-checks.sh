@@ -117,6 +117,10 @@ check "404 links back home" "404.html" 'href="/">Escape back to the guide'
 check "filter input present" "index.html" 'id="favorites-filter"'
 check "filter count live region" "index.html" 'id="favorites-filter-count"'
 
+# --- head metadata ---
+check "canonical URL present" "index.html" '<link rel="canonical" href="https://chicago.harperreed.com/">'
+check "twitter domain derived from baseURL" "index.html" '<meta name="twitter:domain" content="chicago.harperreed.com">'
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
