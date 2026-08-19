@@ -6,7 +6,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.161.1"
+  HUGO_VERSION = "0.164.0"
 
 [[headers]]
   for = "/*"
