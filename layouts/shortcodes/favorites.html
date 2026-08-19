@@ -75,7 +75,7 @@
     <strong>{{ $item.name }}{{ if $item.japanese }} （{{ $item.japanese }}）{{ end }}{{ if $item.friends }} ⭐{{ end }}</strong> — {{ $item.description }}{{ if $item.location }} — {{ $item.location }}{{ end }}{{ if $item.url }} — <a href="{{ $item.url }}" target="_blank" rel="noopener noreferrer">{{ $item.name }}</a>{{ end }}
 </li>
 {{ end }}
-</ul>
+{{ if ne $currentGroup "__unset__" }}</ul>{{ end }}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var input = document.getElementById('favorites-filter');
