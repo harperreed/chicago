@@ -887,3 +887,15 @@
   friends: false
   type: cafe
   keywords: coffee, specialty coffee, art, community, pilsen
+
+- name: "Cocoro"
+  description: "Traditional izakaya-style Japanese: sukiyaki, shabu-shabu, small plates, and a proper sushi bar. Lunch on weekdays, closed Sundays."
+  location: "River North"
+  address: "668 N Wells St, Chicago, IL 60654"
+  lat: 41.89442
+  lng: -87.63436
+  url: "https://cocorosushi.squarespace.com/"
+  friends: false
+  type: restaurant
+  subtype: japanese
+  keywords: japanese, izakaya, sushi, sukiyaki, shabu-shabu, river north
