@@ -899,3 +899,14 @@
   type: restaurant
   subtype: japanese
   keywords: japanese, izakaya, sushi, sukiyaki, shabu-shabu, river north
+
+- name: "Café Colao"
+  description: "Puerto Rican café on Paseo Boricua since 2002: café con leche, quesitos, guava pastelillos, and sandwiches on house-baked bread. Closed Sundays."
+  location: "Humboldt Park"
+  address: "2638 W Division St, Chicago, IL 60622"
+  lat: 41.90312
+  lng: -87.69352
+  url: "https://www.cafecolaochicago.com/"
+  friends: false
+  type: cafe
+  keywords: puerto rican, coffee, cafe con leche, quesitos, bakery, humboldt park, paseo boricua
